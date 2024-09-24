@@ -1,3 +1,6 @@
 [submodule "LLaMA-Factory"]
 	path = LLaMA-Factory
 	url = https://github.com/hiyouga/LLaMA-Factory.git
+[submodule "train"]
+	path = train
+	url = https://github.com/hexixiang/LLaMA-Factory.git
