@@ -1,8 +1,8 @@
-data/
-res/
-results/
-src/data/
-*.log
-src/tag_based_cluster/data/
-src/tag_based_cluster/data_tmp/
-src/tag_based_cluster/exp_tmp_alpaca_longest/
+# data/
+# res/
+# results/
+# src/data/
+# *.log
+# src/tag_based_cluster/data/
+# src/tag_based_cluster/data_tmp/
+# src/tag_based_cluster/exp_tmp_alpaca_longest/
