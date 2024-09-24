@@ -1,3 +1,0 @@
-[submodule "train"]
-	path = train
-	url = https://github.com/hexixiang/LLaMA-Factory.git
