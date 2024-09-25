@@ -109,4 +109,34 @@ If you want to fine-tune all models in one go, we provide a Python script locate
 python train/train.py
 ```
 
+## Model Infer
 
+## Evaluation
+
+We conducted a preference evaluation to compare the performance of OpenCS against several baseline methods. The evaluation was carried out on two datasets: Alpaca52k and Evol-Instruct-70k, using the LLaMA2-7B model. 
+
+The preference evaluation results, shown below, demonstrate the win, tie, and lose rates of OpenCS compared to the baseline methods. The rows represent the five test sets used in the evaluation, while the columns correspond to the four baseline methods. 
+
+### Preference evaluation Results (in %)
+
+The results clearly show that OpenCS consistently achieves higher preference scores compared to the existing methods across both datasets.
+
+<div align="center">
+    <img src="figures/main_results.png" alt="Preference Evaluation Results" width="800"/>
+</div>
+
+*Figure: Preference evaluation results on Alpaca52k and Evol-Instruct-70k datasets with LLaMA2-7B.*
+
+### Cross-LLM performance (in %)
+
+<div align="center">
+    <img src="figures/average.png" alt="Cross-LLM Evaluation Results" width="800"/>
+</div>
+
+## References
+- [Koala](https://github.com/young-geng/EasyLM/tree/main)
+- [Vicuna](https://vicuna.lmsys.org/)
+- [Lima](https://arxiv.org/abs/2305.11206)
+- [Alpaca](https://github.com/tatsu-lab/stanford_alpaca)
+- [Evol-Instruct](https://github.com/nlpxucan/WizardLM)
+- [GPT-4-Report](https://arxiv.org/pdf/2303.08774.pdf)
