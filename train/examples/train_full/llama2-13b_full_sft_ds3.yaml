@@ -1,0 +1,57 @@
+### model
+model_name_or_path: /model/meta-llama/Llama-2-13b-hf
+
+### method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: examples/deepspeed/ds_z3_offload_config.json
+
+### dataset
+dataset: evol_instruct_tips_what_1k_sharegpt
+template: llama2
+# cutoff_len: 2048
+max_length: 4096
+max_samples: 1000
+overwrite_cache: true
+preprocessing_num_workers: 16
+
+### output
+output_dir: 
+  /model/output/llama2-13b-evol_instruct_tips_what_1k_sharegpt-e15lr1e-05
+logging_steps: 1
+save_strategy: !!str no
+# save_total_limit: 1
+# save_steps: 500
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 16
+learning_rate: 1.0e-05
+num_train_epochs: 15
+lr_scheduler_type: linear
+# warmup_ratio: 0.1
+weight_decay: 0.1
+
+optim: adamw_torch
+adam_beta1: 0.9
+adam_beta2: 0.95
+neftune_noise_alpha: 15
+tf32: true
+gradient_checkpointing: true
+# lazy_preprocess: True
+
+bf16: true
+ddp_timeout: 180000000
+
+### eval
+val_size: 0.1
+per_device_eval_batch_size: 1
+eval_strategy: steps
+eval_steps: 500
+
+# wandb
+report_to: wandb
+run_name: llama2-13b-0829-evol_instruct_tips_what_1k_sharegpt-e15lr1e-05

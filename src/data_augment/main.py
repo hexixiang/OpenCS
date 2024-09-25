@@ -4,18 +4,18 @@ from tqdm import tqdm
 import re
 import my_prompts
 from concurrent.futures import ThreadPoolExecutor, as_completed
-import time
-import collections
 from itertools import cycle
+import argparse
 
 openai_api_key = [
-    "sk-LORwSL0exKUgxtlh6aDc3e9f49Bd4cE6969a7813Ef354336",
-    "sk-r25G77V3Q5mulB5c542dFdC1799a499098Cf550bA760383c",
-    "sk-PcEbbrgvYjCkw5Zj223792E9B4734bA68901F3E1398fE630",
-    "sk-DUKSMPwRYanDO0Gj69F914Ff29E4429eA5B3181cC3507403",
-    "sk-kxIkgnGCNZc5cxr653Ee6b4a0cFc4d50A51d249f1c1b221b"
+    "sk-xxxx",
+    "sk-xxxx",
+    "sk-xxxx",
+    "sk-xxxx",
+    "sk-xxxx"
     ]
-openai_api_base = "https://rerverseapi.workergpt.cn/v1"
+
+openai_api_base = "https://xxxx/v1"
 
 response_func = {
     "type": "object",
@@ -68,14 +68,12 @@ def call_openai_format_data(messages, function_parameters, api_key):
         functions=[
             {
                 "name": "format_output",
-                "description": "按照要求格式化输出内容",
+                "description": "Format the output content as required",
                 "parameters": function_parameters,
             }
         ],
         function_call={"name": "format_output"}
     )
-
-
     json_data = json.loads(response.choices[0].message.function_call.arguments)
     return json_data
 
@@ -86,7 +84,6 @@ def get_data(file_path):
         data = json.load(f)
     return data
 
-# 使用正则表达式提取'```json\n'与'\n```'之间的内容
 def extract_json(text):
     match = re.search(r"```json\n(.*?)\n```", text, re.DOTALL)
     if match:
@@ -103,7 +100,6 @@ def process_item(item, api_key):
     instruction = item["instruction"]
     input = item["input"]
     response = item["output"]
-    # 对于response的优化
     user_prompt_response = my_prompts.user_prompt_response.replace("{Instruction}", instruction).replace("{Response}", response)
     message_response = [
         {"role":"system","content":my_prompts.system_prompt_response},
@@ -118,8 +114,6 @@ def process_item(item, api_key):
         new_response = response
         print("error:",response)
     
-
-    # 对于instruction的优化
     user_prompt_instruction = my_prompts.user_prompt_instruction.replace("{Instruction}", instruction).replace("{Response}", new_response)
     message_instruction = [
         {"role":"system","content":my_prompts.system_prompt_instruction},
@@ -136,24 +130,23 @@ def process_item(item, api_key):
     return {"instruction":new_instruction,"input":input,"output":new_response}
 
 def main():
-    data = get_data(r"src\data_augment\data\raw\test_1000_myprompt.json")[0:10]
-    # print(len(data))
+    parser = argparse.ArgumentParser(description="Process data augmentation")
+    parser.add_argument('--input_path', type=str, required=True, help='Path to the input data file')
+    parser.add_argument('--output_path', type=str, required=True, help='Path to the output data file')
+    args = parser.parse_args()
+    data = get_data(args.input_path)[0:10]
     good_case = []
-
     api_keys_cycle = cycle(openai_api_key)
     with ThreadPoolExecutor(max_workers=len(openai_api_key)) as executor:
         futures = [executor.submit(process_item, item, next(api_keys_cycle)) for item in data]
-        
         for future in tqdm(as_completed(futures), total=len(futures)):
             try:
                 result = future.result()
                 good_case.append(result)
             except Exception as e:
-                print(f"处理项目时发生错误: {e}")
-
-    with open(r"src\data_augment\data\aug\test_10.jsonl", "w", encoding="utf-8") as f:
-        json.dump(good_case, f, ensure_ascii=False,indent=4)
-
+                print(f"Error: {e}")
+    with open(args.output_path, "w", encoding="utf-8") as f:
+        json.dump(good_case, f, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     main()
