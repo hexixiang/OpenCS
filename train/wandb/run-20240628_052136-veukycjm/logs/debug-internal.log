@@ -1,0 +1,152 @@
+2024-06-28 05:21:36,696 INFO    StreamThr :2586 [internal.py:wandb_internal():85] W&B internal server running at pid: 2586, started at: 2024-06-28 05:21:36.695373
+2024-06-28 05:21:36,699 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status
+2024-06-28 05:21:36,703 INFO    WriterThread:2586 [datastore.py:open_for_write():87] open: /app/wandb/run-20240628_052136-veukycjm/run-veukycjm.wandb
+2024-06-28 05:21:36,706 DEBUG   SenderThread:2586 [sender.py:send():379] send: header
+2024-06-28 05:21:36,707 DEBUG   SenderThread:2586 [sender.py:send():379] send: run
+2024-06-28 05:21:37,825 INFO    SenderThread:2586 [dir_watcher.py:__init__():211] watching files in: /app/wandb/run-20240628_052136-veukycjm/files
+2024-06-28 05:21:37,825 INFO    SenderThread:2586 [sender.py:_start_run_threads():1188] run started: veukycjm with start time 1719552096.694572
+2024-06-28 05:21:37,836 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: check_version
+2024-06-28 05:21:37,837 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: check_version
+2024-06-28 05:21:39,897 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: run_start
+2024-06-28 05:21:39,937 DEBUG   HandlerThread:2586 [system_info.py:__init__():26] System info init
+2024-06-28 05:21:39,937 DEBUG   HandlerThread:2586 [system_info.py:__init__():41] System info init done
+2024-06-28 05:21:39,937 INFO    HandlerThread:2586 [system_monitor.py:start():194] Starting system monitor
+2024-06-28 05:21:39,937 INFO    SystemMonitor:2586 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-28 05:21:39,938 INFO    HandlerThread:2586 [system_monitor.py:probe():214] Collecting system info
+2024-06-28 05:21:39,939 INFO    SystemMonitor:2586 [interfaces.py:start():188] Started cpu monitoring
+2024-06-28 05:21:39,940 INFO    SystemMonitor:2586 [interfaces.py:start():188] Started disk monitoring
+2024-06-28 05:21:39,941 INFO    SystemMonitor:2586 [interfaces.py:start():188] Started gpu monitoring
+2024-06-28 05:21:39,943 INFO    SystemMonitor:2586 [interfaces.py:start():188] Started memory monitoring
+2024-06-28 05:21:39,945 INFO    SystemMonitor:2586 [interfaces.py:start():188] Started network monitoring
+2024-06-28 05:21:40,068 DEBUG   HandlerThread:2586 [system_info.py:probe():152] Probing system
+2024-06-28 05:21:40,071 DEBUG   HandlerThread:2586 [gitlib.py:_init_repo():56] git repository is invalid
+2024-06-28 05:21:40,071 DEBUG   HandlerThread:2586 [system_info.py:probe():200] Probing system done
+2024-06-28 05:21:40,071 DEBUG   HandlerThread:2586 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-78-generic-x86_64-with-glibc2.35', 'python': '3.10.6', 'heartbeatAt': '2024-06-28T05:21:40.068502', 'startedAt': '2024-06-28T05:21:36.683765', 'docker': None, 'cuda': None, 'args': ('examples/train_full/qwen1.5_full_sft_ds3.yaml',), 'state': 'running', 'program': '/app/src/llamafactory/launcher.py', 'codePathLocal': 'src/llamafactory/launcher.py', 'codePath': 'src/llamafactory/launcher.py', 'host': '12d21dbc188b', 'username': 'root', 'executable': '/usr/bin/python', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 2618.75003125, 'min': 800.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 1364.015, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 3200.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}, {'current': 2600.0, 'min': 800.0, 'max': 3400.0}], 'disk': {'/': {'total': 878.6192092895508, 'used': 755.6906852722168}}, 'gpu': 'NVIDIA A800-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A800-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 1007.5114631652832}}
+2024-06-28 05:21:40,071 INFO    HandlerThread:2586 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-28 05:21:40,071 INFO    HandlerThread:2586 [system_monitor.py:probe():227] Publishing system info
+2024-06-28 05:21:40,073 INFO    HandlerThread:2586 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-28 05:21:40,077 DEBUG   SenderThread:2586 [sender.py:send():379] send: files
+2024-06-28 05:21:40,078 INFO    SenderThread:2586 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-06-28 05:21:40,321 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-28 05:21:40,322 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: python_packages
+2024-06-28 05:21:40,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-28 05:21:40,325 DEBUG   SenderThread:2586 [sender.py:send():379] send: telemetry
+2024-06-28 05:21:40,326 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: stop_status
+2024-06-28 05:21:40,331 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:40,829 INFO    Thread-12 :2586 [dir_watcher.py:_on_file_created():271] file/dir created: /app/wandb/run-20240628_052136-veukycjm/files/wandb-metadata.json
+2024-06-28 05:21:40,830 INFO    Thread-12 :2586 [dir_watcher.py:_on_file_created():271] file/dir created: /app/wandb/run-20240628_052136-veukycjm/files/requirements.txt
+2024-06-28 05:21:40,981 DEBUG   SenderThread:2586 [sender.py:send():379] send: config
+2024-06-28 05:21:40,984 DEBUG   SenderThread:2586 [sender.py:send():379] send: telemetry
+2024-06-28 05:21:40,984 DEBUG   SenderThread:2586 [sender.py:send():379] send: metric
+2024-06-28 05:21:40,984 DEBUG   SenderThread:2586 [sender.py:send():379] send: telemetry
+2024-06-28 05:21:40,984 DEBUG   SenderThread:2586 [sender.py:send():379] send: metric
+2024-06-28 05:21:40,985 WARNING SenderThread:2586 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-06-28 05:21:40,985 DEBUG   SenderThread:2586 [sender.py:send():379] send: telemetry
+2024-06-28 05:21:40,985 DEBUG   SenderThread:2586 [sender.py:send():379] send: telemetry
+2024-06-28 05:21:40,985 DEBUG   SenderThread:2586 [sender.py:send():379] send: config
+2024-06-28 05:21:41,025 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-28 05:21:41,025 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: log_artifact
+2024-06-28 05:21:41,323 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:41,476 INFO    wandb-upload_0:2586 [upload_job.py:push():130] Uploaded file /tmp/tmpg7zjv2htwandb/5njimo0y-wandb-metadata.json
+2024-06-28 05:21:41,865 INFO    SenderThread:2586 [sender.py:send_request_log_artifact():1518] logged artifact model-tqwen1.5-32b-0628-v2 - {'id': 'QXJ0aWZhY3Q6OTMxOTQ5MTc5', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzNjgwMTUzMQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTMxOTQ5MTc5', 'versionIndex': 0}}}
+2024-06-28 05:21:41,866 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:21:42,323 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:42,827 INFO    Thread-12 :2586 [dir_watcher.py:_on_file_created():271] file/dir created: /app/wandb/run-20240628_052136-veukycjm/files/output.log
+2024-06-28 05:21:43,323 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:44,323 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:44,828 INFO    Thread-12 :2586 [dir_watcher.py:_on_file_modified():288] file/dir modified: /app/wandb/run-20240628_052136-veukycjm/files/output.log
+2024-06-28 05:21:45,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:46,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:47,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:47,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:21:48,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:49,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:50,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:51,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:52,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:53,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:21:53,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:54,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:55,322 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-28 05:21:55,323 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: stop_status
+2024-06-28 05:21:55,366 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:56,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:57,325 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:58,325 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:21:58,591 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:21:59,325 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:00,325 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:01,325 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:03,179 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:04,178 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:04,324 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:05,178 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:06,178 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:07,178 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:09,534 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:10,322 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-28 05:22:10,323 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: stop_status
+2024-06-28 05:22:10,533 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:10,584 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:11,535 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:11,840 INFO    Thread-12 :2586 [dir_watcher.py:_on_file_modified():288] file/dir modified: /app/wandb/run-20240628_052136-veukycjm/files/config.yaml
+2024-06-28 05:22:12,534 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:13,534 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:15,768 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:16,766 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:16,768 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:17,767 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:18,767 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:19,767 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:21,769 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:23,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:24,294 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:25,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:25,322 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-28 05:22:25,323 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: stop_status
+2024-06-28 05:22:26,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:26,847 INFO    Thread-12 :2586 [dir_watcher.py:_on_file_modified():288] file/dir modified: /app/wandb/run-20240628_052136-veukycjm/files/output.log
+2024-06-28 05:22:27,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:27,579 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:28,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:29,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:30,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:31,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:32,295 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:33,294 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:33,296 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:34,296 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:35,296 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:36,296 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:37,296 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:38,294 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:38,296 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:39,951 DEBUG   SystemMonitor:2586 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-28 05:22:39,961 DEBUG   SenderThread:2586 [sender.py:send():379] send: stats
+2024-06-28 05:22:41,524 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-28 05:22:41,525 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: stop_status
+2024-06-28 05:22:41,566 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:43,791 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:45,742 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:49,745 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:49,943 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:50,942 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:54,448 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:55,448 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:55,743 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:22:56,448 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:56,524 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-28 05:22:56,525 DEBUG   SenderThread:2586 [sender.py:send_request():406] send_request: stop_status
+2024-06-28 05:22:56,860 INFO    Thread-12 :2586 [dir_watcher.py:_on_file_modified():288] file/dir modified: /app/wandb/run-20240628_052136-veukycjm/files/output.log
+2024-06-28 05:22:57,448 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:58,448 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:22:59,448 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:23:00,448 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:23:01,449 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:23:01,743 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report
+2024-06-28 05:23:02,449 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:23:03,449 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:23:04,449 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:23:05,449 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:23:06,449 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-28 05:23:07,744 DEBUG   HandlerThread:2586 [handler.py:handle_request():158] handle_request: status_report

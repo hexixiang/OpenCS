@@ -1,0 +1,403 @@
+  0%|                                                                                                          | 0/60 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  2%|█▋                                                                                                | 1/60 [00:32<32:26, 32.98s/it]
+
+  3%|███▎                                                                                              | 2/60 [01:00<28:51, 29.86s/it]
+
+  5%|████▉                                                                                             | 3/60 [01:27<27:10, 28.60s/it]
+
+  7%|██████▌                                                                                           | 4/60 [01:54<26:08, 28.01s/it]
+  7%|██████▌                                                                                           | 4/60 [01:54<26:08, 28.01s/it][INFO|trainer.py:3478] 2024-08-14 04:20:57,263 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4
+[INFO|configuration_utils.py:472] 2024-08-14 04:20:57,266 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:20:57,267 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:21:10,937 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:21:10,938 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:21:10,938 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/special_tokens_map.json
+[2024-08-14 04:21:11,492] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step4 is about to be saved!
+[2024-08-14 04:21:11,501] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:21:11,501] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:21:11,514] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:21:11,526] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/global_step4/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:21:35,416] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/global_step4/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:21:35,416] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4/global_step4/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-14 04:21:36,067] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step4 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  8%|████████▏                                                                                         | 5/60 [03:05<39:51, 43.48s/it]
+{'loss': 0.9818, 'grad_norm': 3.1277589444695817, 'learning_rate': 9.166666666666666e-06, 'epoch': 1.23}
+
+ 10%|█████████▊                                                                                        | 6/60 [03:30<33:17, 36.99s/it]
+
+ 12%|███████████▍                                                                                      | 7/60 [03:54<29:02, 32.87s/it]
+
+ 13%|█████████████                                                                                     | 8/60 [04:18<26:04, 30.09s/it][INFO|trainer.py:3478] 2024-08-14 04:23:24,985 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8
+[INFO|configuration_utils.py:472] 2024-08-14 04:23:24,988 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:23:24,988 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/generation_config.json
+[2024-08-14 04:23:50,888] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step8 is about to be saved!
+[INFO|modeling_utils.py:2698] 2024-08-14 04:23:50,292 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:23:50,293 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:23:50,294 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/special_tokens_map.json
+[2024-08-14 04:23:50,898] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/global_step8/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:23:50,898] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/global_step8/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:23:50,911] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/global_step8/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:23:50,913] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/global_step8/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:25:11,997] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/global_step8/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:25:11,998] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8/global_step8/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-14 04:25:13,124 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-4] due to args.save_total_limit
+[2024-08-14 04:25:13,121] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step8 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 15%|██████████████▋                                                                                   | 9/60 [06:51<58:17, 68.58s/it]
+
+ 17%|████████████████▏                                                                                | 10/60 [07:16<45:43, 54.87s/it]
+
+ 18%|█████████████████▊                                                                               | 11/60 [07:39<37:03, 45.37s/it]
+
+ 20%|███████████████████▍                                                                             | 12/60 [08:03<31:07, 38.90s/it]
+ 20%|███████████████████▍                                                                             | 12/60 [08:03<31:07, 38.90s/it][INFO|trainer.py:3478] 2024-08-14 04:27:08,374 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12
+[INFO|configuration_utils.py:472] 2024-08-14 04:27:08,378 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:27:08,378 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:27:27,583 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:27:27,584 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:27:27,585 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/special_tokens_map.json
+[2024-08-14 04:27:28,134] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step12 is about to be saved!
+[2024-08-14 04:27:28,143] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/global_step12/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:27:28,144] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/global_step12/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:27:28,157] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/global_step12/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:27:28,161] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/global_step12/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:28:53,688] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/global_step12/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:28:53,689] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12/global_step12/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-14 04:28:59,013] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step12 is ready now!
+[INFO|trainer.py:3570] 2024-08-14 04:28:59,017 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-8] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 22%|█████████████████████                                                                            | 13/60 [10:39<58:14, 74.35s/it]
+
+ 23%|██████████████████████▋                                                                          | 14/60 [11:04<45:22, 59.19s/it]
+
+ 25%|████████████████████████▎                                                                        | 15/60 [11:28<36:28, 48.63s/it]
+
+ 27%|█████████████████████████▊                                                                       | 16/60 [11:52<30:15, 41.26s/it]
+ 27%|█████████████████████████▊                                                                       | 16/60 [11:52<30:15, 41.26s/it][INFO|trainer.py:3478] 2024-08-14 04:31:01,438 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16
+[INFO|configuration_utils.py:472] 2024-08-14 04:31:01,442 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:31:01,442 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:31:26,293 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:31:26,294 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:31:26,295 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/special_tokens_map.json
+[2024-08-14 04:31:27,368] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step16 is about to be saved!
+[2024-08-14 04:31:27,377] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/global_step16/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:31:27,378] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/global_step16/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:31:27,391] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/global_step16/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:31:27,393] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/global_step16/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:32:51,123] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/global_step16/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:32:51,124] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16/global_step16/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-14 04:32:51,401] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step16 is ready now!
+[INFO|trainer.py:3570] 2024-08-14 04:32:51,405 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-12] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 28%|███████████████████████████▍                                                                     | 17/60 [14:28<54:14, 75.68s/it]
+
+ 30%|█████████████████████████████                                                                    | 18/60 [14:52<42:09, 60.22s/it]
+
+ 32%|██████████████████████████████▋                                                                  | 19/60 [15:16<33:42, 49.33s/it]
+
+ 33%|████████████████████████████████▎                                                                | 20/60 [15:40<27:50, 41.75s/it]
+ 33%|████████████████████████████████▎                                                                | 20/60 [15:40<27:50, 41.75s/it][INFO|trainer.py:3478] 2024-08-14 04:34:47,257 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20
+[INFO|configuration_utils.py:472] 2024-08-14 04:34:47,261 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:34:47,261 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:35:06,753 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:35:06,755 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:35:06,755 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/special_tokens_map.json
+[2024-08-14 04:35:07,302] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step20 is about to be saved!
+[2024-08-14 04:35:07,311] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:35:07,311] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:35:07,325] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:35:07,326] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:36:31,313] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:36:31,313] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-14 04:36:34,227 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-16] due to args.save_total_limit
+[2024-08-14 04:36:34,223] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step20 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.2918, 'grad_norm': 1.690544842919294, 'learning_rate': 6.5000000000000004e-06, 'epoch': 5.17}
+ 35%|█████████████████████████████████▉                                                               | 21/60 [18:11<48:34, 74.72s/it]
+
+ 37%|███████████████████████████████████▌                                                             | 22/60 [18:36<37:41, 59.51s/it]
+
+ 38%|█████████████████████████████████████▏                                                           | 23/60 [18:59<30:06, 48.84s/it]
+
+ 40%|██████████████████████████████████████▊                                                          | 24/60 [19:24<24:50, 41.40s/it][INFO|trainer.py:3478] 2024-08-14 04:38:35,209 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24
+[INFO|configuration_utils.py:472] 2024-08-14 04:38:35,212 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:38:35,213 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:39:00,006 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:39:00,007 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:39:00,008 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/special_tokens_map.json
+[2024-08-14 04:39:01,068] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step24 is about to be saved!
+[2024-08-14 04:39:01,077] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/global_step24/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:39:01,077] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/global_step24/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:39:01,090] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/global_step24/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:39:01,092] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/global_step24/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|trainer.py:3570] 2024-08-14 04:40:25,432 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-20] due to args.save_total_limit
+[2024-08-14 04:40:24,894] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/global_step24/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:40:24,895] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24/global_step24/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-14 04:40:25,428] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step24 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.2388, 'grad_norm': 1.1156040520931936, 'learning_rate': 5.833333333333334e-06, 'epoch': 6.15}
+ 42%|████████████████████████████████████████▍                                                        | 25/60 [22:00<44:17, 75.93s/it]
+
+ 43%|██████████████████████████████████████████                                                       | 26/60 [22:24<34:11, 60.35s/it]
+
+ 45%|███████████████████████████████████████████▋                                                     | 27/60 [22:48<27:11, 49.45s/it]
+
+ 47%|█████████████████████████████████████████████▎                                                   | 28/60 [23:12<22:17, 41.81s/it][INFO|trainer.py:3478] 2024-08-14 04:42:21,578 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28
+[INFO|configuration_utils.py:472] 2024-08-14 04:42:21,581 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:42:21,582 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:42:40,548 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:42:40,549 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:42:40,549 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/special_tokens_map.json
+[2024-08-14 04:42:41,096] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step28 is about to be saved!
+[2024-08-14 04:42:41,105] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:42:41,106] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:42:41,119] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:42:41,120] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|trainer.py:3570] 2024-08-14 04:44:03,323 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-24] due to args.save_total_limit
+[2024-08-14 04:44:03,078] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:44:03,079] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-14 04:44:03,319] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step28 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 48%|██████████████████████████████████████████████▉                                                  | 29/60 [25:38<37:45, 73.08s/it]
+
+ 50%|████████████████████████████████████████████████▌                                                | 30/60 [26:02<29:09, 58.33s/it]
+
+ 52%|██████████████████████████████████████████████████                                               | 31/60 [26:26<23:11, 47.97s/it]
+
+ 53%|███████████████████████████████████████████████████▋                                             | 32/60 [26:50<19:01, 40.76s/it]
+ 53%|███████████████████████████████████████████████████▋                                             | 32/60 [26:50<19:01, 40.76s/it][INFO|trainer.py:3478] 2024-08-14 04:46:03,594 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32
+[INFO|configuration_utils.py:472] 2024-08-14 04:46:03,598 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:46:03,599 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:46:28,844 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:46:28,846 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:46:28,847 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/special_tokens_map.json
+[2024-08-14 04:46:29,864] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step32 is about to be saved!
+[2024-08-14 04:46:29,873] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/global_step32/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:46:29,873] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/global_step32/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:46:29,886] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/global_step32/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:46:29,889] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/global_step32/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:46:55,080] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/global_step32/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:46:55,080] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32/global_step32/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-14 04:48:05,707 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-28] due to args.save_total_limit
+[2024-08-14 04:48:05,702] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step32 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 55%|█████████████████████████████████████████████████████▎                                           | 33/60 [29:38<35:33, 79.03s/it]
+
+ 57%|██████████████████████████████████████████████████████▉                                          | 34/60 [30:02<27:05, 62.53s/it]
+
+ 58%|████████████████████████████████████████████████████████▌                                        | 35/60 [30:26<21:13, 50.96s/it]
+
+ 60%|██████████████████████████████████████████████████████████▏                                      | 36/60 [30:50<17:08, 42.85s/it]
+ 60%|██████████████████████████████████████████████████████████▏                                      | 36/60 [30:50<17:08, 42.85s/it][INFO|trainer.py:3478] 2024-08-14 04:50:02,013 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36
+[INFO|configuration_utils.py:472] 2024-08-14 04:50:02,016 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:50:02,017 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:50:21,610 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:50:21,611 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:50:21,612 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/special_tokens_map.json
+[2024-08-14 04:50:22,167] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step36 is about to be saved!
+[2024-08-14 04:50:22,176] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/global_step36/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:50:22,176] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/global_step36/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:50:22,189] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/global_step36/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:50:22,191] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/global_step36/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:51:43,020] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/global_step36/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:51:43,021] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36/global_step36/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-14 04:51:48,784 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-32] due to args.save_total_limit
+[2024-08-14 04:51:48,780] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step36 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 62%|███████████████████████████████████████████████████████████▊                                     | 37/60 [33:21<28:49, 75.19s/it]
+
+ 63%|█████████████████████████████████████████████████████████████▍                                   | 38/60 [33:45<21:56, 59.86s/it]
+
+ 65%|███████████████████████████████████████████████████████████████                                  | 39/60 [34:09<17:10, 49.07s/it]
+
+ 67%|████████████████████████████████████████████████████████████████▋                                | 40/60 [34:32<13:50, 41.51s/it]
+ 67%|████████████████████████████████████████████████████████████████▋                                | 40/60 [34:32<13:50, 41.51s/it][INFO|trainer.py:3478] 2024-08-14 04:53:48,817 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40
+[INFO|configuration_utils.py:472] 2024-08-14 04:53:48,821 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:53:48,821 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:54:13,897 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:54:13,898 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:54:13,898 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/special_tokens_map.json
+[2024-08-14 04:54:14,928] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step40 is about to be saved!
+[2024-08-14 04:54:14,937] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/global_step40/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:54:14,937] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/global_step40/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:54:14,950] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/global_step40/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:54:14,953] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:54:41,684] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:54:41,685] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-14 04:55:47,799] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step40 is ready now!
+[INFO|trainer.py:3570] 2024-08-14 04:55:47,804 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-36] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.0596, 'grad_norm': 1.2408619171618023, 'learning_rate': 3.1666666666666667e-06, 'epoch': 10.09}
+ 68%|██████████████████████████████████████████████████████████████████▎                              | 41/60 [37:17<24:52, 78.55s/it]
+
+
+ 72%|█████████████████████████████████████████████████████████████████████▌                           | 43/60 [38:05<14:21, 50.70s/it]
+
+ 73%|███████████████████████████████████████████████████████████████████████▏                         | 44/60 [38:29<11:22, 42.68s/it]
+ 73%|███████████████████████████████████████████████████████████████████████▏                         | 44/60 [38:29<11:22, 42.68s/it][INFO|trainer.py:3478] 2024-08-14 04:57:43,653 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44
+[INFO|configuration_utils.py:472] 2024-08-14 04:57:43,656 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 04:57:43,657 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 04:58:02,978 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 04:58:02,980 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 04:58:02,980 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/special_tokens_map.json
+[2024-08-14 04:58:03,533] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step44 is about to be saved!
+[2024-08-14 04:58:03,542] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/global_step44/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 04:58:03,542] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/global_step44/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 04:58:03,555] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/global_step44/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 04:58:03,557] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/global_step44/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 04:58:28,522] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/global_step44/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 04:58:28,522] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44/global_step44/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-14 04:59:31,145 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-40] due to args.save_total_limit
+[2024-08-14 04:59:31,139] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step44 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 75%|████████████████████████████████████████████████████████████████████████▊                        | 45/60 [41:01<18:49, 75.30s/it]
+ 77%|██████████████████████████████████████████████████████████████████████████▎                      | 46/60 [41:25<13:59, 59.95s/it]
+ 77%|██████████████████████████████████████████████████████████████████████████▎                      | 46/60 [41:25<13:59, 59.95s/it]
+{'loss': 0.0397, 'grad_norm': 0.5709210637007298, 'learning_rate': 2.3333333333333336e-06, 'epoch': 11.32}
+ 78%|███████████████████████████████████████████████████████████████████████████▉                     | 47/60 [41:48<10:37, 49.05s/it]
+ 78%|███████████████████████████████████████████████████████████████████████████▉                     | 47/60 [41:48<10:37, 49.05s/it]
+ 80%|█████████████████████████████████████████████████████████████████████████████▌                   | 48/60 [42:13<08:18, 41.58s/it]
+[INFO|configuration_utils.py:769] 2024-08-14 05:01:31,324 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/generation_config.jsonl checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 05:01:56,475 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/special_tokens_map.json been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 05:01:56,475 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/special_tokens_map.json been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/model.safetensors.index.json.
+[2024-08-14 05:01:57,525] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step48 is about to be saved!
+[2024-08-14 05:01:57,535] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/global_step48/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 05:01:57,535] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/global_step48/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 05:01:57,548] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/global_step48/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 05:01:57,550] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/global_step48/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 05:03:17,317] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/global_step48/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 05:03:17,318] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48/global_step48/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-14 05:03:19,657 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-44] due to args.save_total_limit
+[2024-08-14 05:03:19,653] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step48 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.0365, 'grad_norm': 0.4634585055930218, 'learning_rate': 1.8333333333333333e-06, 'epoch': 12.06}
+ 82%|███████████████████████████████████████████████████████████████████████████████▏                 | 49/60 [44:46<13:47, 75.26s/it]
+
+ 83%|████████████████████████████████████████████████████████████████████████████████▊                | 50/60 [45:10<09:58, 59.89s/it]
+
+
+ 87%|████████████████████████████████████████████████████████████████████████████████████             | 52/60 [45:58<05:32, 41.57s/it]
+ 87%|████████████████████████████████████████████████████████████████████████████████████             | 52/60 [45:58<05:32, 41.57s/it][INFO|trainer.py:3478] 2024-08-14 05:05:15,280 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52
+[INFO|configuration_utils.py:472] 2024-08-14 05:05:15,283 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 05:05:15,284 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 05:05:34,809 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 05:05:34,810 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 05:05:34,811 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/special_tokens_map.json
+[2024-08-14 05:05:35,371] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step52 is about to be saved!
+[2024-08-14 05:05:35,380] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/global_step52/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 05:05:35,380] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/global_step52/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 05:05:35,393] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/global_step52/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 05:05:35,396] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/global_step52/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 05:06:54,778] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/global_step52/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 05:06:54,779] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52/global_step52/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-14 05:06:59,775 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-48] due to args.save_total_limit
+[2024-08-14 05:06:59,771] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step52 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 88%|█████████████████████████████████████████████████████████████████████████████████████▋           | 53/60 [48:27<08:35, 73.58s/it]
+{'loss': 0.0225, 'grad_norm': 0.33001337036949135, 'learning_rate': 1.1666666666666668e-06, 'epoch': 13.05}
+
+
+ 92%|████████████████████████████████████████████████████████████████████████████████████████▉        | 55/60 [49:15<04:01, 48.29s/it]
+
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████▌      | 56/60 [49:39<02:43, 40.98s/it]
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████▌      | 56/60 [49:39<02:43, 40.98s/it][INFO|trainer.py:3478] 2024-08-14 05:08:59,946 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56
+[INFO|configuration_utils.py:472] 2024-08-14 05:08:59,950 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 05:08:59,950 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 05:09:25,152 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 05:09:25,153 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 05:09:25,154 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/special_tokens_map.json
+[2024-08-14 05:09:26,169] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step56 is about to be saved!
+[2024-08-14 05:09:26,179] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 05:09:26,179] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 05:09:26,192] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 05:09:26,195] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 05:10:54,656] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 05:10:54,656] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-14 05:10:57,215] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step56 is ready now!
+[INFO|trainer.py:3570] 2024-08-14 05:10:57,221 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-52] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████▏    | 57/60 [52:22<03:52, 77.56s/it]
+
+ 97%|█████████████████████████████████████████████████████████████████████████████████████████████▊   | 58/60 [52:46<02:03, 61.51s/it]
+
+ 98%|███████████████████████████████████████████████████████████████████████████████████████████████▍ | 59/60 [53:10<00:50, 50.24s/it]
+{'loss': 0.0201, 'grad_norm': 0.6211080249609429, 'learning_rate': 1.6666666666666668e-07, 'epoch': 14.52}
+
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 60/60 [53:33<00:00, 42.33s/it][INFO|trainer.py:3478] 2024-08-14 05:12:34,696 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60
+[INFO|configuration_utils.py:472] 2024-08-14 05:12:34,699 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 05:12:34,700 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 05:12:53,917 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 05:12:53,919 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 05:12:53,920 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/special_tokens_map.json
+[2024-08-14 05:12:54,476] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step60 is about to be saved!
+[2024-08-14 05:12:54,485] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 05:12:54,485] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 05:12:54,498] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 05:12:54,500] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 05:14:14,520] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 05:14:14,521] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-14 05:14:19,204 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-56] due to args.save_total_limit
+[2024-08-14 05:14:19,200] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step60 is ready now!
+[INFO|trainer.py:3478] 2024-08-14 05:14:41,722 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60
+[INFO|configuration_utils.py:472] 2024-08-14 05:14:41,725 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 05:14:41,726 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 05:15:21,616 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 05:15:21,617 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 05:15:21,618 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/special_tokens_map.json
+[2024-08-14 05:15:22,639] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step60 is about to be saved!
+[2024-08-14 05:15:22,648] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-14 05:15:22,649] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-14 05:15:22,662] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-14 05:15:22,664] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-14 05:16:46,517] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-14 05:16:46,530] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:2383] 2024-08-14 05:16:50,517 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 60/60 [57:57<00:00, 57.95s/it]
+[2024-08-14 05:16:50,510] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step60 is ready now!
+{'train_runtime': 3487.741, 'train_samples_per_second': 3.871, 'train_steps_per_second': 0.017, 'train_loss': 0.314687087557589, 'epoch': 14.77}
+[INFO|trainer.py:3478] 2024-08-14 05:16:58,002 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5
+[INFO|configuration_utils.py:472] 2024-08-14 05:16:58,005 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/config.json
+[INFO|configuration_utils.py:769] 2024-08-14 05:16:58,006 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-14 05:17:18,163 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-14 05:17:18,165 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-14 05:17:18,165 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/special_tokens_map.json
+[INFO|trainer.py:3788] 2024-08-14 05:17:18,986 >>
+***** Running Evaluation *****
+[INFO|trainer.py:3790] 2024-08-14 05:17:18,986 >>   Num examples = 100
+[INFO|trainer.py:3793] 2024-08-14 05:17:18,986 >>   Batch size = 1
+  0%|                                                                                                          | 0/15 [00:00<?, ?it/s]
+***** train metrics *****
+  epoch                    =    14.7692
+  total_flos               =     3379GF
+  train_loss               =     0.3147
+  train_runtime            = 0:58:07.74
+  train_samples_per_second =      3.871
+  train_steps_per_second   =      0.017
+Figure saved at: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e15lr1e-5/training_loss.png
+ 40%|███████████████████████████████████████▏                                                          | 6/15 [00:01<00:02,  3.08it/s]
+ 80%|█████████████████████████████████████████████████████████████████████████████▌                   | 12/15 [00:03<00:00,  3.03it/s]
+ 80%|█████████████████████████████████████████████████████████████████████████████▌                   | 12/15 [00:03<00:00,  3.03it/s]
+***** eval metrics *****
+  epoch                   =    14.7692
+  eval_loss               =     1.7481
+  eval_runtime            = 0:00:05.32
+  eval_samples_per_second =      18.79
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [00:04<00:00,  3.07it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [00:04<00:00,  3.07it/s]

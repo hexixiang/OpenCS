@@ -1,0 +1,74 @@
+  0%|                                                                                                                                                              | 0/20 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  5%|███████▌                                                                                                                                              | 1/20 [00:28<08:59, 28.40s/it]
+
+ 10%|███████████████                                                                                                                                       | 2/20 [00:52<07:46, 25.92s/it]
+
+ 15%|██████████████████████▌                                                                                                                               | 3/20 [01:16<07:06, 25.08s/it]
+
+ 20%|██████████████████████████████                                                                                                                        | 4/20 [01:40<06:33, 24.61s/it]
+{'loss': 1.0739, 'grad_norm': 5.534704132029241, 'learning_rate': 8.000000000000001e-06, 'epoch': 0.98}
+
+ 25%|█████████████████████████████████████▌                                                                                                                | 5/20 [02:04<06:03, 24.21s/it]
+
+
+ 35%|████████████████████████████████████████████████████▌                                                                                                 | 7/20 [02:51<05:09, 23.84s/it]
+
+ 40%|████████████████████████████████████████████████████████████                                                                                          | 8/20 [03:14<04:44, 23.74s/it]
+{'loss': 0.8597, 'grad_norm': 2.030251125343367, 'learning_rate': 6e-06, 'epoch': 1.97}
+
+
+ 50%|██████████████████████████████████████████████████████████████████████████▌                                                                          | 10/20 [04:01<03:55, 23.58s/it]
+
+ 55%|█████████████████████████████████████████████████████████████████████████████████▉                                                                   | 11/20 [04:24<03:31, 23.50s/it]
+{'loss': 0.754, 'grad_norm': 1.6673023044917794, 'learning_rate': 4.5e-06, 'epoch': 2.71}
+
+
+ 65%|████████████████████████████████████████████████████████████████████████████████████████████████▊                                                    | 13/20 [05:11<02:44, 23.44s/it]
+
+ 70%|████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                            | 14/20 [05:35<02:20, 23.45s/it]
+{'loss': 0.6382, 'grad_norm': 1.761241095299069, 'learning_rate': 3e-06, 'epoch': 3.45}
+
+
+ 80%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                             | 16/20 [06:21<01:33, 23.43s/it]
+
+ 85%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                      | 17/20 [06:45<01:10, 23.43s/it]
+{'loss': 0.5614, 'grad_norm': 2.400539905695523, 'learning_rate': 1.5e-06, 'epoch': 4.18}
+
+
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋       | 19/20 [07:32<00:23, 23.39s/it]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [07:55<00:00, 23.38s/it][INFO|trainer.py:2383] 2024-08-19 08:17:24,978 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [07:55<00:00, 23.77s/it]
+{'loss': 0.5495, 'grad_norm': 1.3062269071883124, 'learning_rate': 0.0, 'epoch': 4.92}
+{'train_runtime': 484.4588, 'train_samples_per_second': 9.289, 'train_steps_per_second': 0.041, 'train_loss': 0.8182183533906937, 'epoch': 4.92}
+[INFO|trainer.py:3478] 2024-08-19 08:17:32,322 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e5lr1e-5
+[INFO|configuration_utils.py:472] 2024-08-19 08:17:32,325 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e5lr1e-5/config.json
+[INFO|configuration_utils.py:769] 2024-08-19 08:17:32,325 >> Configuration saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e5lr1e-5/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-19 08:17:46,153 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e5lr1e-5/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-19 08:17:46,154 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e5lr1e-5/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-19 08:17:46,155 >> Special tokens file saved in /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e5lr1e-5/special_tokens_map.json
+[INFO|trainer.py:3788] 2024-08-19 08:17:46,864 >>
+***** Running Evaluation *****
+[INFO|trainer.py:3790] 2024-08-19 08:17:46,864 >>   Num examples = 100
+[INFO|trainer.py:3793] 2024-08-19 08:17:46,865 >>   Batch size = 1
+  0%|                                                                                                                                                           | 0/15 [00:00<?, ?it/s]
+***** train metrics *****
+  epoch                    =     4.9231
+  total_flos               =     1128GF
+  train_loss               =     0.8182
+  train_runtime            = 0:08:04.45
+  train_samples_per_second =      9.289
+  train_steps_per_second   =      0.041
+Figure saved at: /model/output/Llama-2-7b-hf-cluster_pair_score_myprompt_sharegpt-e5lr1e-5/training_loss.png
+
+
+ 93%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎         | 14/15 [00:04<00:00,  3.05it/s]
+***** eval metrics *****
+  epoch                   =     4.9231
+  eval_loss               =     0.9494
+  eval_runtime            = 0:00:05.28
+  eval_samples_per_second =     18.909
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [00:04<00:00,  3.08it/s]
+[INFO|modelcard.py:449] 2024-08-19 08:17:52,153 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}

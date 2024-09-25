@@ -1,0 +1,73 @@
+  0%|                                                                                                                                                           | 0/20 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.3708, 'grad_norm': 5.717619570543916, 'learning_rate': 9.5e-06, 'epoch': 0.25}
+  5%|███████▎                                                                                                                                           | 1/20 [00:28<09:10, 28.96s/it]
+
+ 10%|██████████████▋                                                                                                                                    | 2/20 [00:53<07:50, 26.15s/it]
+
+ 15%|██████████████████████                                                                                                                             | 3/20 [01:17<07:10, 25.31s/it]
+
+ 20%|█████████████████████████████▍                                                                                                                     | 4/20 [01:41<06:37, 24.82s/it]
+
+ 25%|████████████████████████████████████▊                                                                                                              | 5/20 [02:05<06:08, 24.55s/it]
+
+ 30%|████████████████████████████████████████████                                                                                                       | 6/20 [02:29<05:41, 24.37s/it]
+
+ 35%|███████████████████████████████████████████████████▍                                                                                               | 7/20 [02:53<05:15, 24.24s/it]
+
+ 40%|██████████████████████████████████████████████████████████▊                                                                                        | 8/20 [03:17<04:50, 24.19s/it]
+
+ 45%|██████████████████████████████████████████████████████████████████▏                                                                                | 9/20 [03:41<04:25, 24.15s/it]
+
+ 50%|█████████████████████████████████████████████████████████████████████████                                                                         | 10/20 [04:05<04:01, 24.12s/it]
+
+ 55%|████████████████████████████████████████████████████████████████████████████████▎                                                                 | 11/20 [04:29<03:36, 24.09s/it]
+
+ 60%|███████████████████████████████████████████████████████████████████████████████████████▌                                                          | 12/20 [04:53<03:12, 24.05s/it]
+
+ 65%|██████████████████████████████████████████████████████████████████████████████████████████████▉                                                   | 13/20 [05:17<02:48, 24.03s/it]
+
+ 70%|██████████████████████████████████████████████████████████████████████████████████████████████████████▏                                           | 14/20 [05:41<02:24, 24.00s/it]
+
+ 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                    | 15/20 [06:05<01:59, 23.99s/it]
+
+ 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                             | 16/20 [06:29<01:35, 23.99s/it]
+
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                      | 17/20 [06:53<01:11, 23.97s/it]
+
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍              | 18/20 [07:18<00:48, 24.17s/it]
+
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋       | 19/20 [07:42<00:24, 24.17s/it]
+{'loss': 0.9312, 'grad_norm': 0.607942315288936, 'learning_rate': 0.0, 'epoch': 4.92}
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [08:06<00:00, 24.19s/it][INFO|trainer.py:2383] 2024-08-19 09:03:12,848 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [08:06<00:00, 24.33s/it]
+[INFO|trainer.py:3478] 2024-08-19 09:03:20,748 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-filtered_alpaca_1k_longest-e5lr1e-5
+[INFO|configuration_utils.py:472] 2024-08-19 09:03:20,751 >> Configuration saved in /model/output/Llama-2-7b-hf-filtered_alpaca_1k_longest-e5lr1e-5/config.json
+[INFO|configuration_utils.py:769] 2024-08-19 09:03:20,752 >> Configuration saved in /model/output/Llama-2-7b-hf-filtered_alpaca_1k_longest-e5lr1e-5/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-19 09:03:35,627 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-filtered_alpaca_1k_longest-e5lr1e-5/model.safetensors.index.json.
+***** train metrics *****
+  epoch                    =     4.9231
+  total_flos               =     2843GF
+  train_loss               =     1.0574
+  train_runtime            = 0:08:16.89
+  train_samples_per_second =      9.056
+  train_steps_per_second   =       0.04
+Figure saved at: /model/output/Llama-2-7b-hf-filtered_alpaca_1k_longest-e5lr1e-5/training_loss.png
+08/19/2024 09:03:36 - WARNING - llamafactory.extras.ploting - No metric eval_loss to plot.
+[INFO|tokenization_utils_base.py:2574] 2024-08-19 09:03:35,628 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-filtered_alpaca_1k_longest-e5lr1e-5/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-19 09:03:35,628 >> Special tokens file saved in /model/output/Llama-2-7b-hf-filtered_alpaca_1k_longest-e5lr1e-5/special_tokens_map.json
+[INFO|trainer.py:3788] 2024-08-19 09:03:36,507 >>
+***** Running Evaluation *****
+[INFO|trainer.py:3790] 2024-08-19 09:03:36,507 >>   Num examples = 100
+[INFO|trainer.py:3793] 2024-08-19 09:03:36,507 >>   Batch size = 1
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [00:04<00:00,  3.09it/s]
+[INFO|modelcard.py:449] 2024-08-19 09:03:41,805 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}
+***** eval metrics *****
+  epoch                   =     4.9231
+  eval_loss               =      1.182
+  eval_runtime            = 0:00:05.29
+  eval_samples_per_second =     18.876
+  eval_steps_per_second   =      2.831

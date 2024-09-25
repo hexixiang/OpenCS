@@ -1,0 +1,70 @@
+  0%|                                                                                                                          | 0/60 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  2%|█▉                                                                                                                | 1/60 [00:29<29:26, 29.93s/it]
+{'loss': 1.5348, 'grad_norm': 9.444878731509986, 'learning_rate': 9.833333333333333e-06, 'epoch': 0.25}
+
+
+  5%|█████▋                                                                                                            | 3/60 [01:18<24:22, 25.66s/it]
+{'loss': 1.2493, 'grad_norm': 9.680067792292515, 'learning_rate': 9.5e-06, 'epoch': 0.74}
+
+  7%|███████▌                                                                                                          | 4/60 [01:43<23:34, 25.26s/it][INFO|trainer.py:3478] 2024-08-14 03:06:41,829 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-ccluster_pair_score_WHATMAKESGOOD_1k_sharegpt_origin-e15lr1e-5/checkpoint-4
+OSError: [Errno 28] No space left on device
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/app/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/app/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/app/src/llamafactory/train/tuner.py", line 50, in run_exp
+    run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+  File "/app/src/llamafactory/train/sft/workflow.py", line 88, in run_sft
+    train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 1932, in train
+    return inner_training_loop(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2365, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2796, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial, metrics=metrics)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2875, in _save_checkpoint
+    self.save_model(output_dir, _internal_call=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 3416, in save_model
+    self._save(output_dir, state_dict=state_dict)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 3500, in _save
+    self.model.save_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 2467, in save_pretrained
+    model_to_save.config.save_pretrained(save_directory)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 471, in save_pretrained
+    self.to_json_file(output_config_file, use_diff=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 962, in to_json_file
+    with open(json_file_path, "w", encoding="utf-8") as writer:
+OSError: [Errno 28] No space left on device
+[rank0]: OSError: [Errno 28] No space left on device
+[rank0]: During handling of the above exception, another exception occurred:
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank0]:     launch()
+[rank0]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank0]:     run_exp()
+[rank0]:   File "/app/src/llamafactory/train/tuner.py", line 50, in run_exp
+[rank0]:     run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+[rank0]:   File "/app/src/llamafactory/train/sft/workflow.py", line 88, in run_sft
+[rank0]:     train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 1932, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2365, in _inner_training_loop
+[rank0]:     self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2796, in _maybe_log_save_evaluate
+[rank0]:     self._save_checkpoint(model, trial, metrics=metrics)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2875, in _save_checkpoint
+[rank0]:     self.save_model(output_dir, _internal_call=True)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 3416, in save_model
+[rank0]:     self._save(output_dir, state_dict=state_dict)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 3500, in _save
+[rank0]:     self.model.save_pretrained(
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 2467, in save_pretrained
+[rank0]:     model_to_save.config.save_pretrained(save_directory)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 471, in save_pretrained
+[rank0]:     self.to_json_file(output_config_file, use_diff=True)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 962, in to_json_file
+[rank0]:     with open(json_file_path, "w", encoding="utf-8") as writer:
+[rank0]: OSError: [Errno 28] No space left on device

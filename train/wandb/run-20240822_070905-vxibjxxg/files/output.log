@@ -1,0 +1,77 @@
+  0%|                                                                             | 0/675 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  0%|                                                                   | 1/675 [00:30<5:40:01, 30.27s/it]
+
+  0%|▏                                                                  | 2/675 [00:54<5:02:20, 26.95s/it]
+  0%|▏                                                                  | 2/675 [00:54<5:02:20, 26.95s/it]Traceback (most recent call last):
+  File "/app/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/app/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/app/src/llamafactory/train/tuner.py", line 50, in run_exp
+    run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+  File "/app/src/llamafactory/train/sft/workflow.py", line 88, in run_sft
+    train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 1932, in train
+    return inner_training_loop(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2268, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 3324, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/accelerator.py", line 2126, in backward
+    self.deepspeed_engine_wrapped.backward(loss, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/utils/deepspeed.py", line 175, in backward
+    self.engine.step()
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/runtime/engine.py", line 2160, in step
+    self._take_model_step(lr_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/runtime/engine.py", line 2066, in _take_model_step
+    self.optimizer.step()
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/runtime/zero/stage3.py", line 2050, in step
+    self._optimizer_step(sub_group_id)
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/runtime/zero/stage3.py", line 939, in _optimizer_step
+    cpu_loss = self.optimizer.step()
+  File "/usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py", line 391, in wrapper
+    out = func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/ops/adam/cpu_adam.py", line 163, in step
+    self.ds_opt_adam.adam_update(self.opt_id, state['step'], group['lr'], beta1, beta2, group['eps'],
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/app/src/llamafactory/launcher.py", line 23, in <module>
+[rank0]:     launch()
+[rank0]:   File "/app/src/llamafactory/launcher.py", line 19, in launch
+[rank0]:     run_exp()
+[rank0]:   File "/app/src/llamafactory/train/tuner.py", line 50, in run_exp
+[rank0]:     run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+[rank0]:   File "/app/src/llamafactory/train/sft/workflow.py", line 88, in run_sft
+[rank0]:     train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 1932, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2268, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 3324, in training_step
+[rank0]:     self.accelerator.backward(loss, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/accelerate/accelerator.py", line 2126, in backward
+[rank0]:     self.deepspeed_engine_wrapped.backward(loss, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/accelerate/utils/deepspeed.py", line 175, in backward
+[rank0]:     self.engine.step()
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/deepspeed/runtime/engine.py", line 2160, in step
+[rank0]:     self._take_model_step(lr_kwargs)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/deepspeed/runtime/engine.py", line 2066, in _take_model_step
+[rank0]:     self.optimizer.step()
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+[rank0]:     ret_val = func(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/deepspeed/runtime/zero/stage3.py", line 2050, in step
+[rank0]:     self._optimizer_step(sub_group_id)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/deepspeed/runtime/zero/stage3.py", line 939, in _optimizer_step
+[rank0]:     cpu_loss = self.optimizer.step()
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/torch/optim/optimizer.py", line 391, in wrapper
+[rank0]:     out = func(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/usr/local/lib/python3.10/dist-packages/deepspeed/ops/adam/cpu_adam.py", line 163, in step
+[rank0]:     self.ds_opt_adam.adam_update(self.opt_id, state['step'], group['lr'], beta1, beta2, group['eps'],
+[rank0]: KeyboardInterrupt

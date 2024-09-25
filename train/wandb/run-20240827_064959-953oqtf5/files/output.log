@@ -1,0 +1,123 @@
+  0%|                                                                                                       | 0/45 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  2%|██                                                                                             | 1/45 [00:25<18:48, 25.64s/it]
+
+  4%|████▏                                                                                          | 2/45 [00:46<16:16, 22.72s/it]
+{'loss': 0.8748, 'grad_norm': 1.252405427114789, 'learning_rate': 9.555555555555556e-06, 'epoch': 0.56}
+
+
+  9%|████████▍                                                                                      | 4/45 [01:27<14:33, 21.31s/it]
+
+ 11%|██████████▌                                                                                    | 5/45 [01:48<14:04, 21.10s/it]
+
+ 13%|████████████▋                                                                                  | 6/45 [02:08<13:36, 20.92s/it]
+{'loss': 0.6859, 'grad_norm': 0.6774195838724941, 'learning_rate': 8.666666666666668e-06, 'epoch': 1.68}
+
+
+ 18%|████████████████▉                                                                              | 8/45 [02:50<12:48, 20.76s/it]
+
+ 20%|███████████████████                                                                            | 9/45 [03:10<12:24, 20.68s/it]
+{'loss': 0.6113, 'grad_norm': 0.5361861461244799, 'learning_rate': 8.000000000000001e-06, 'epoch': 2.53}
+
+
+ 24%|██████████████████████▉                                                                       | 11/45 [03:51<11:42, 20.67s/it]
+
+ 27%|█████████████████████████                                                                     | 12/45 [04:12<11:21, 20.65s/it]
+{'loss': 0.5828, 'grad_norm': 0.5508786379159735, 'learning_rate': 7.333333333333333e-06, 'epoch': 3.37}
+
+ 29%|███████████████████████████▏                                                                  | 13/45 [04:33<11:00, 20.65s/it]
+
+
+ 33%|███████████████████████████████▎                                                              | 15/45 [05:14<10:19, 20.65s/it]
+
+ 36%|█████████████████████████████████▍                                                            | 16/45 [05:35<09:58, 20.64s/it]
+{'loss': 0.4907, 'grad_norm': 0.46325656252565217, 'learning_rate': 6.444444444444445e-06, 'epoch': 4.49}
+
+
+ 40%|█████████████████████████████████████▌                                                        | 18/45 [06:16<09:16, 20.62s/it]
+
+ 42%|███████████████████████████████████████▋                                                      | 19/45 [06:36<08:56, 20.62s/it]
+{'loss': 0.4463, 'grad_norm': 0.42271710167531945, 'learning_rate': 5.777777777777778e-06, 'epoch': 5.33}
+
+
+ 47%|███████████████████████████████████████████▊                                                  | 21/45 [07:18<08:15, 20.66s/it]
+
+ 49%|█████████████████████████████████████████████▉                                                | 22/45 [07:38<07:54, 20.63s/it]
+{'loss': 0.3873, 'grad_norm': 0.43745336965287085, 'learning_rate': 5.1111111111111115e-06, 'epoch': 6.18}
+
+ 51%|████████████████████████████████████████████████                                              | 23/45 [07:59<07:33, 20.63s/it]
+
+
+ 56%|████████████████████████████████████████████████████▏                                         | 25/45 [08:40<06:53, 20.67s/it]
+{'loss': 0.331, 'grad_norm': 0.3785966611239377, 'learning_rate': 4.444444444444444e-06, 'epoch': 7.02}
+
+
+ 60%|████████████████████████████████████████████████████████▍                                     | 27/45 [09:22<06:12, 20.70s/it]
+
+ 62%|██████████████████████████████████████████████████████████▍                                   | 28/45 [09:42<05:51, 20.67s/it]
+{'loss': 0.2876, 'grad_norm': 0.39113078750883157, 'learning_rate': 3.777777777777778e-06, 'epoch': 7.86}
+
+ 64%|████████████████████████████████████████████████████████████▌                                 | 29/45 [10:03<05:30, 20.65s/it]
+
+
+ 69%|████████████████████████████████████████████████████████████████▊                             | 31/45 [10:44<04:49, 20.68s/it]
+{'loss': 0.306, 'grad_norm': 0.36193454476548015, 'learning_rate': 3.1111111111111116e-06, 'epoch': 8.7}
+
+ 71%|██████████████████████████████████████████████████████████████████▊                           | 32/45 [11:05<04:28, 20.67s/it]
+
+
+ 76%|███████████████████████████████████████████████████████████████████████                       | 34/45 [11:46<03:47, 20.64s/it]
+
+ 78%|█████████████████████████████████████████████████████████████████████████                     | 35/45 [12:07<03:26, 20.67s/it]
+{'loss': 0.2902, 'grad_norm': 0.3815011705790568, 'learning_rate': 2.222222222222222e-06, 'epoch': 9.82}
+
+
+ 82%|█████████████████████████████████████████████████████████████████████████████▎                | 37/45 [12:48<02:45, 20.66s/it]
+{'loss': 0.2462, 'grad_norm': 0.3526366777612815, 'learning_rate': 1.777777777777778e-06, 'epoch': 10.39}
+
+
+ 87%|█████████████████████████████████████████████████████████████████████████████████▍            | 39/45 [13:31<02:06, 21.04s/it]
+
+ 89%|███████████████████████████████████████████████████████████████████████████████████▌          | 40/45 [13:52<01:45, 21.12s/it]
+{'loss': 0.2295, 'grad_norm': 0.3747917829064187, 'learning_rate': 1.111111111111111e-06, 'epoch': 11.23}
+
+ 91%|█████████████████████████████████████████████████████████████████████████████████████▋        | 41/45 [14:14<01:24, 21.17s/it]
+
+
+ 96%|█████████████████████████████████████████████████████████████████████████████████████████▊    | 43/45 [14:57<00:42, 21.30s/it]
+{'loss': 0.2587, 'grad_norm': 0.39449147694353076, 'learning_rate': 4.444444444444445e-07, 'epoch': 12.07}
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 45/45 [15:39<00:00, 21.23s/it][INFO|trainer.py:2383] 2024-08-27 07:05:45,627 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 45/45 [15:39<00:00, 20.88s/it]
+{'loss': 0.2241, 'grad_norm': 0.3446114323532346, 'learning_rate': 0.0, 'epoch': 12.63}
+{'train_runtime': 948.3162, 'train_samples_per_second': 14.236, 'train_steps_per_second': 0.047, 'train_loss': 0.4459450960159302, 'epoch': 12.63}
+[INFO|trainer.py:3478] 2024-08-27 07:05:52,832 >> Saving model checkpoint to /model/output/llama2-7b-filtered_evol_instruct_1k_longest_beautified-e15lr1e-05
+[INFO|configuration_utils.py:472] 2024-08-27 07:05:52,836 >> Configuration saved in /model/output/llama2-7b-filtered_evol_instruct_1k_longest_beautified-e15lr1e-05/config.json
+[INFO|configuration_utils.py:769] 2024-08-27 07:05:52,837 >> Configuration saved in /model/output/llama2-7b-filtered_evol_instruct_1k_longest_beautified-e15lr1e-05/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-27 07:06:07,031 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/llama2-7b-filtered_evol_instruct_1k_longest_beautified-e15lr1e-05/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-27 07:06:07,032 >> tokenizer config file saved in /model/output/llama2-7b-filtered_evol_instruct_1k_longest_beautified-e15lr1e-05/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-27 07:06:07,032 >> Special tokens file saved in /model/output/llama2-7b-filtered_evol_instruct_1k_longest_beautified-e15lr1e-05/special_tokens_map.json
+[INFO|trainer.py:3788] 2024-08-27 07:06:07,696 >>
+***** Running Evaluation *****
+[INFO|trainer.py:3790] 2024-08-27 07:06:07,696 >>   Num examples = 100
+[INFO|trainer.py:3793] 2024-08-27 07:06:07,696 >>   Batch size = 1
+***** train metrics *****
+  epoch                    =    12.6316
+  total_flos               =    17523GF
+  train_loss               =     0.4459
+  train_runtime            = 0:15:48.31
+  train_samples_per_second =     14.236
+  train_steps_per_second   =      0.047
+Figure saved at: /model/output/llama2-7b-filtered_evol_instruct_1k_longest_beautified-e15lr1e-05/training_loss.png
+08/27/2024 07:06:07 - WARNING - llamafactory.extras.ploting - No metric eval_loss to plot.
+
+ 92%|██████████████████████████████████████████████████████████████████████████████████████▊       | 12/13 [00:03<00:00,  3.23it/s]
+***** eval metrics *****
+  epoch                   =    12.6316
+  eval_loss               =     0.8892
+  eval_runtime            = 0:00:04.37
+  eval_samples_per_second =     22.856
+100%|██████████████████████████████████████████████████████████████████████████████████████████████| 13/13 [00:03<00:00,  3.25it/s]
+[INFO|modelcard.py:449] 2024-08-27 07:06:12,072 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}

@@ -1,0 +1,62 @@
+  0%|                                                                                                   | 0/15 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.3861, 'learning_rate': 9.333333333333334e-06, 'epoch': 1.0}
+  7%|██████                                                                                     | 1/15 [01:21<18:59, 81.38s/it]
+
+ 13%|████████████▏                                                                              | 2/15 [02:34<16:33, 76.43s/it]
+
+ 20%|██████████████████▏                                                                        | 3/15 [03:42<14:30, 72.57s/it]
+
+ 27%|████████████████████████▎                                                                  | 4/15 [05:00<13:42, 74.76s/it]
+
+
+ 40%|████████████████████████████████████▍                                                      | 6/15 [07:16<10:37, 70.79s/it]
+{'loss': 0.3656, 'grad_norm': 4.758820024620956, 'learning_rate': 6e-06, 'epoch': 6.0}
+
+
+ 53%|████████████████████████████████████████████████▌                                          | 8/15 [09:53<08:51, 75.97s/it]
+{'loss': 0.3607, 'grad_norm': 2.085263375495845, 'learning_rate': 4.666666666666667e-06, 'epoch': 8.0}
+
+ 60%|██████████████████████████████████████████████████████▌                                    | 9/15 [11:05<07:27, 74.50s/it]
+
+
+ 73%|██████████████████████████████████████████████████████████████████                        | 11/15 [13:25<04:50, 72.62s/it]
+
+ 80%|████████████████████████████████████████████████████████████████████████                  | 12/15 [14:47<03:46, 75.49s/it]
+{'loss': 0.3591, 'grad_norm': 1.702101513669409, 'learning_rate': 2.0000000000000003e-06, 'epoch': 12.0}
+
+ 87%|██████████████████████████████████████████████████████████████████████████████            | 13/15 [15:55<02:26, 73.14s/it]
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████| 15/15 [18:13<00:00, 71.01s/it][INFO|trainer.py:2383] 2024-08-21 09:02:44,434 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|██████████████████████████████████████████████████████████████████████████████████████████| 15/15 [18:13<00:00, 72.93s/it]
+{'loss': 0.3494, 'grad_norm': 1.702101513669409, 'learning_rate': 0.0, 'epoch': 15.0}
+{'train_runtime': 1102.6722, 'train_samples_per_second': 12.243, 'train_steps_per_second': 0.014, 'train_loss': 0.3654721041520437, 'epoch': 15.0}
+[INFO|trainer.py:3478] 2024-08-21 09:02:51,734 >> Saving model checkpoint to /model/output/llama2-7b-filtered_alpaca_1k_longest_beautified-e15lr1e-5
+[INFO|configuration_utils.py:472] 2024-08-21 09:02:51,738 >> Configuration saved in /model/output/llama2-7b-filtered_alpaca_1k_longest_beautified-e15lr1e-5/config.json
+[INFO|configuration_utils.py:769] 2024-08-21 09:02:51,738 >> Configuration saved in /model/output/llama2-7b-filtered_alpaca_1k_longest_beautified-e15lr1e-5/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-21 09:03:06,304 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/llama2-7b-filtered_alpaca_1k_longest_beautified-e15lr1e-5/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-21 09:03:06,305 >> tokenizer config file saved in /model/output/llama2-7b-filtered_alpaca_1k_longest_beautified-e15lr1e-5/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-21 09:03:06,305 >> Special tokens file saved in /model/output/llama2-7b-filtered_alpaca_1k_longest_beautified-e15lr1e-5/special_tokens_map.json
+[INFO|trainer.py:3788] 2024-08-21 09:03:07,037 >>
+***** Running Evaluation *****
+[INFO|trainer.py:3790] 2024-08-21 09:03:07,037 >>   Num examples = 100
+[INFO|trainer.py:3793] 2024-08-21 09:03:07,037 >>   Batch size = 64
+***** train metrics *****
+  epoch                    =       15.0
+  total_flos               =    16658GF
+  train_loss               =     0.3655
+  train_runtime            = 0:18:22.67
+  train_samples_per_second =     12.243
+  train_steps_per_second   =      0.014
+Figure saved at: /model/output/llama2-7b-filtered_alpaca_1k_longest_beautified-e15lr1e-5/training_loss.png
+08/21/2024 09:03:07 - WARNING - llamafactory.extras.ploting - No metric eval_loss to plot.
+***** eval metrics *****
+  epoch                   =       15.0
+  eval_loss               =     1.4064
+  eval_runtime            = 0:00:04.41
+  eval_samples_per_second =     22.625
+  eval_steps_per_second   =      0.226
+100%|███████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 609.37it/s]
+[INFO|modelcard.py:449] 2024-08-21 09:03:11,458 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}

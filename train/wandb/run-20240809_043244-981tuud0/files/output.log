@@ -1,0 +1,402 @@
+  0%|                                                                                                                     | 0/60 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.5799, 'grad_norm': 10.903230702791754, 'learning_rate': 9.833333333333333e-06, 'epoch': 0.25}
+{'loss': 1.3682, 'grad_norm': 7.792111824361199, 'learning_rate': 9.666666666666667e-06, 'epoch': 0.49}
+
+  5%|█████▍                                                                                                       | 3/60 [02:47<52:56, 55.74s/it]
+{'loss': 1.1864, 'grad_norm': 6.707930400744366, 'learning_rate': 9.5e-06, 'epoch': 0.74}
+
+  7%|███████▎                                                                                                     | 4/60 [03:37<50:08, 53.72s/it][INFO|trainer.py:3478] 2024-08-09 04:36:42,758 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4
+[INFO|configuration_utils.py:472] 2024-08-09 04:36:42,761 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 04:36:42,762 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/generation_config.json
+[2024-08-09 04:36:57,757] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step4 is about to be saved!
+[2024-08-09 04:36:57,767] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 04:36:57,767] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 04:36:57,780] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/global_step4/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 04:36:57,784] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/global_step4/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|modeling_utils.py:2698] 2024-08-09 04:36:57,195 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 04:36:57,196 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 04:36:57,196 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/special_tokens_map.json
+[2024-08-09 04:37:09,612] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/global_step4/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 04:37:09,612] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4/global_step4/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 04:37:13,339] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step4 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.0436, 'grad_norm': 4.634625908200139, 'learning_rate': 9.166666666666666e-06, 'epoch': 1.23}
+  8%|████████▉                                                                                                  | 5/60 [05:14<1:03:29, 69.27s/it]
+
+ 10%|██████████▉                                                                                                  | 6/60 [06:08<57:46, 64.20s/it]
+
+ 12%|████████████▋                                                                                                | 7/60 [06:58<52:32, 59.48s/it]
+
+ 13%|██████████████▌                                                                                              | 8/60 [07:54<50:33, 58.33s/it][INFO|trainer.py:3478] 2024-08-09 04:40:58,249 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8
+[INFO|configuration_utils.py:472] 2024-08-09 04:40:58,253 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 04:40:58,253 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 04:41:12,133 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 04:41:12,135 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 04:41:12,135 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/special_tokens_map.json
+[2024-08-09 04:41:12,684] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step8 is about to be saved!
+[2024-08-09 04:41:12,706] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/global_step8/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 04:41:12,706] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/global_step8/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 04:41:12,719] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/global_step8/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 04:41:12,762] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/global_step8/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 04:41:26,488] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/global_step8/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 04:41:26,488] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8/global_step8/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 04:41:27,860] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step8 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 04:41:27,865 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-4] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.8041, 'grad_norm': 2.111895376503966, 'learning_rate': 8.5e-06, 'epoch': 2.22}
+ 15%|████████████████                                                                                           | 9/60 [09:35<1:00:47, 71.52s/it]
+
+ 17%|██████████████████                                                                                          | 10/60 [10:27<54:37, 65.56s/it]
+
+ 18%|███████████████████▊                                                                                        | 11/60 [11:24<51:26, 63.00s/it]
+
+ 20%|█████████████████████▌                                                                                      | 12/60 [12:18<48:17, 60.36s/it][INFO|trainer.py:3478] 2024-08-09 04:45:26,233 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12
+[INFO|configuration_utils.py:472] 2024-08-09 04:45:26,237 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 04:45:26,237 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/generation_config.json
+[2024-08-09 04:45:40,292] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step12 is about to be saved!
+[2024-08-09 04:45:40,308] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/global_step12/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 04:45:40,309] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/global_step12/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 04:45:40,322] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/global_step12/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 04:45:40,371] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/global_step12/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|modeling_utils.py:2698] 2024-08-09 04:45:39,719 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 04:45:39,721 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 04:45:39,721 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/special_tokens_map.json
+[2024-08-09 04:45:54,441] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/global_step12/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 04:45:54,442] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12/global_step12/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 04:45:55,942] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step12 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 04:45:55,951 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-8] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.5881, 'grad_norm': 1.6234271433759673, 'learning_rate': 7.833333333333333e-06, 'epoch': 3.2}
+ 22%|███████████████████████▍                                                                                    | 13/60 [13:58<56:38, 72.32s/it]
+
+ 23%|█████████████████████████▏                                                                                  | 14/60 [14:48<50:15, 65.56s/it]
+
+
+ 27%|████████████████████████████▊                                                                               | 16/60 [16:30<42:11, 57.53s/it]
+ 27%|████████████████████████████▊                                                                               | 16/60 [16:30<42:11, 57.53s/it][INFO|trainer.py:3478] 2024-08-09 04:49:46,339 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16
+[INFO|configuration_utils.py:472] 2024-08-09 04:49:46,343 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 04:49:46,344 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 04:50:00,527 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 04:50:00,528 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 04:50:00,528 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/special_tokens_map.json
+[2024-08-09 04:50:01,082] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step16 is about to be saved!
+[2024-08-09 04:50:01,098] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/global_step16/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 04:50:01,098] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/global_step16/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 04:50:01,111] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/global_step16/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 04:50:01,149] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/global_step16/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 04:50:14,806] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/global_step16/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 04:50:14,807] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16/global_step16/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 04:50:16,483] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step16 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 04:50:16,487 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-12] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 28%|██████████████████████████████▌                                                                             | 17/60 [18:18<52:06, 72.71s/it]
+{'loss': 0.4404, 'grad_norm': 1.3579696757452024, 'learning_rate': 7.166666666666667e-06, 'epoch': 4.18}
+
+ 30%|████████████████████████████████▍                                                                           | 18/60 [19:09<46:18, 66.16s/it]
+
+ 32%|██████████████████████████████████▏                                                                         | 19/60 [20:05<43:06, 63.09s/it]
+
+ 33%|████████████████████████████████████                                                                        | 20/60 [20:53<39:11, 58.78s/it][INFO|trainer.py:3478] 2024-08-09 04:54:14,270 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20
+[INFO|configuration_utils.py:472] 2024-08-09 04:54:14,273 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 04:54:14,274 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/generation_config.json
+[2024-08-09 04:54:28,583] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step20 is about to be saved!
+[2024-08-09 04:54:28,596] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 04:54:28,597] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 04:54:28,610] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/global_step20/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 04:54:28,628] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|modeling_utils.py:2698] 2024-08-09 04:54:28,009 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 04:54:28,010 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 04:54:28,011 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/special_tokens_map.json
+[2024-08-09 04:54:43,182] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 04:54:43,183] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20/global_step20/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 04:54:44,277] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step20 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 04:54:44,286 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-16] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.2923, 'grad_norm': 1.2491439749243165, 'learning_rate': 6.5000000000000004e-06, 'epoch': 5.17}
+ 35%|█████████████████████████████████████▊                                                                      | 21/60 [22:37<46:54, 72.16s/it]
+
+
+ 38%|█████████████████████████████████████████▍                                                                  | 23/60 [24:26<39:12, 63.57s/it]
+{'loss': 0.2419, 'grad_norm': 1.219241654433785, 'learning_rate': 6.166666666666667e-06, 'epoch': 5.66}
+
+ 40%|███████████████████████████████████████████▏                                                                | 24/60 [25:19<36:09, 60.26s/it][INFO|trainer.py:3478] 2024-08-09 04:58:43,840 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24
+[INFO|configuration_utils.py:472] 2024-08-09 04:58:43,843 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 04:58:43,844 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/generation_config.json
+[2024-08-09 04:58:58,733] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step24 is about to be saved!
+[2024-08-09 04:58:58,747] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/global_step24/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 04:58:58,748] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/global_step24/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 04:58:58,761] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/global_step24/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 04:58:58,808] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/global_step24/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|modeling_utils.py:2698] 2024-08-09 04:58:58,174 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 04:58:58,175 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 04:58:58,176 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/special_tokens_map.json
+[2024-08-09 04:59:13,104] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/global_step24/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 04:59:13,105] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24/global_step24/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 04:59:14,292] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step24 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 04:59:14,301 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-20] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.2209, 'grad_norm': 1.5210029124295392, 'learning_rate': 5.833333333333334e-06, 'epoch': 6.15}
+
+ 43%|██████████████████████████████████████████████▊                                                             | 26/60 [28:01<38:49, 68.51s/it]
+{'loss': 0.1649, 'grad_norm': 2.3107848121491283, 'learning_rate': 5.666666666666667e-06, 'epoch': 6.4}
+
+ 45%|████████████████████████████████████████████████▌                                                           | 27/60 [28:50<34:32, 62.79s/it]
+
+ 47%|██████████████████████████████████████████████████▍                                                         | 28/60 [29:46<32:21, 60.67s/it][INFO|trainer.py:3478] 2024-08-09 05:03:13,850 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28
+[INFO|configuration_utils.py:472] 2024-08-09 05:03:13,854 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:03:13,854 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 05:03:28,011 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:03:28,012 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:03:28,013 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/special_tokens_map.json
+[2024-08-09 05:03:28,594] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step28 is about to be saved!
+[2024-08-09 05:03:28,614] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:03:28,614] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:03:28,627] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 05:03:28,679] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 05:03:42,963] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:03:42,964] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-09 05:03:44,364 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-24] due to args.save_total_limit
+[2024-08-09 05:03:44,355] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step28 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 48%|████████████████████████████████████████████████████▏                                                       | 29/60 [31:35<38:49, 75.13s/it]
+{'loss': 0.152, 'grad_norm': 1.316949024989493, 'learning_rate': 5.1666666666666675e-06, 'epoch': 7.14}
+
+ 50%|██████████████████████████████████████████████████████                                                      | 30/60 [32:32<34:54, 69.82s/it]
+
+ 52%|███████████████████████████████████████████████████████▊                                                    | 31/60 [33:23<30:56, 64.02s/it]
+
+ 53%|█████████████████████████████████████████████████████████▌                                                  | 32/60 [34:20<28:57, 62.06s/it][INFO|trainer.py:3478] 2024-08-09 05:07:50,142 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32
+[INFO|configuration_utils.py:472] 2024-08-09 05:07:50,146 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:07:50,146 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 05:08:04,515 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:08:04,516 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:08:04,516 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/special_tokens_map.json
+[2024-08-09 05:08:05,081] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step32 is about to be saved!
+[2024-08-09 05:08:05,101] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/global_step32/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:08:05,102] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/global_step32/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:08:05,115] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/global_step32/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 05:08:05,167] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/global_step32/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 05:08:19,505] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/global_step32/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:08:19,506] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32/global_step32/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 05:08:20,384] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step32 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 05:08:20,389 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-28] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.1012, 'grad_norm': 2.456439166756296, 'learning_rate': 4.5e-06, 'epoch': 8.12}
+
+ 57%|█████████████████████████████████████████████████████████████▏                                              | 34/60 [37:05<30:25, 70.22s/it]
+
+ 58%|███████████████████████████████████████████████████████████████                                             | 35/60 [37:53<26:30, 63.62s/it]
+
+ 60%|████████████████████████████████████████████████████████████████▊                                           | 36/60 [38:50<24:35, 61.47s/it]
+ 60%|████████████████████████████████████████████████████████████████▊                                           | 36/60 [38:50<24:35, 61.47s/it][INFO|trainer.py:3478] 2024-08-09 05:12:19,866 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36
+[INFO|configuration_utils.py:472] 2024-08-09 05:12:19,870 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:12:19,870 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 05:12:34,116 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:12:34,117 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:12:34,118 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/special_tokens_map.json
+[2024-08-09 05:12:34,715] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step36 is about to be saved!
+[2024-08-09 05:12:34,729] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/global_step36/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:12:34,729] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/global_step36/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:12:34,742] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/global_step36/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 05:12:34,762] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/global_step36/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 05:12:49,312] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/global_step36/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:12:49,312] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36/global_step36/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-09 05:12:50,746 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-32] due to args.save_total_limit
+[2024-08-09 05:12:50,732] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step36 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 62%|██████████████████████████████████████████████████████████████████▌                                         | 37/60 [40:37<28:50, 75.24s/it]
+{'loss': 0.051, 'grad_norm': 1.1801013852061777, 'learning_rate': 3.833333333333334e-06, 'epoch': 9.11}
+
+ 63%|████████████████████████████████████████████████████████████████████▍                                       | 38/60 [41:38<26:01, 70.98s/it]
+
+ 65%|██████████████████████████████████████████████████████████████████████▏                                     | 39/60 [42:25<22:19, 63.77s/it]
+
+ 67%|████████████████████████████████████████████████████████████████████████                                    | 40/60 [43:23<20:40, 62.01s/it][INFO|trainer.py:3478] 2024-08-09 05:16:51,361 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40
+[INFO|configuration_utils.py:472] 2024-08-09 05:16:51,364 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:16:51,365 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 05:17:05,613 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:17:05,614 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:17:05,614 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/special_tokens_map.json
+[2024-08-09 05:17:06,180] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step40 is about to be saved!
+[2024-08-09 05:17:06,202] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/global_step40/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:17:06,202] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/global_step40/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:17:06,215] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/global_step40/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 05:17:06,267] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 05:17:20,797] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:17:20,798] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40/global_step40/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 05:17:21,379] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step40 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 05:17:21,383 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-36] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.0461, 'grad_norm': 0.7826295117216353, 'learning_rate': 3.1666666666666667e-06, 'epoch': 10.09}
+ 68%|█████████████████████████████████████████████████████████████████████████▊                                  | 41/60 [45:09<23:47, 75.11s/it]
+
+ 70%|███████████████████████████████████████████████████████████████████████████▌                                | 42/60 [46:05<20:51, 69.52s/it]
+
+ 72%|█████████████████████████████████████████████████████████████████████████████▍                              | 43/60 [46:58<18:13, 64.34s/it]
+
+ 73%|███████████████████████████████████████████████████████████████████████████████▏                            | 44/60 [47:47<15:59, 59.95s/it][INFO|trainer.py:3478] 2024-08-09 05:21:18,730 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44
+[INFO|configuration_utils.py:472] 2024-08-09 05:21:18,733 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:21:18,734 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/generation_config.json
+[2024-08-09 05:21:33,776] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step44 is about to be saved!
+[2024-08-09 05:21:33,798] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/global_step44/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:21:33,798] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/global_step44/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:21:33,811] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/global_step44/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[INFO|modeling_utils.py:2698] 2024-08-09 05:21:33,181 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:21:33,183 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:21:33,183 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/special_tokens_map.json
+[2024-08-09 05:21:33,863] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/global_step44/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 05:21:48,035] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/global_step44/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:21:48,036] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44/global_step44/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 05:21:49,077] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step44 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 05:21:49,082 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-40] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 75%|█████████████████████████████████████████████████████████████████████████████████                           | 45/60 [49:34<18:31, 74.12s/it]
+ 77%|██████████████████████████████████████████████████████████████████████████████████▊                         | 46/60 [50:31<16:02, 68.73s/it]
+ 77%|██████████████████████████████████████████████████████████████████████████████████▊                         | 46/60 [50:31<16:02, 68.73s/it]
+ 78%|████████████████████████████████████████████████████████████████████████████████████▌                       | 47/60 [51:21<13:41, 63.20s/it]
+ 78%|████████████████████████████████████████████████████████████████████████████████████▌                       | 47/60 [51:21<13:41, 63.20s/it]
+{'loss': 0.0143, 'grad_norm': 0.9464056142043128, 'learning_rate': 2.166666666666667e-06, 'epoch': 11.57}
+ 80%|██████████████████████████████████████████████████████████████████████████████████████▍                     | 48/60 [52:19<12:20, 61.70s/it]
+[INFO|configuration_utils.py:769] 2024-08-09 05:25:54,397 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/generation_config.json:54,393 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48
+[INFO|configuration_utils.py:769] 2024-08-09 05:25:54,397 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/generation_config.json:54,393 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48
+[2024-08-09 05:26:09,292] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step48 is about to be saved!
+[2024-08-09 05:26:09,306] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/global_step48/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:26:09,306] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/global_step48/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:26:09,319] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/global_step48/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:26:08,731 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/special_tokens_map.jsonameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:26:08,731 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/special_tokens_map.jsonameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/model.safetensors.index.json.
+[2024-08-09 05:26:24,208] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/global_step48/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:26:24,209] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48/global_step48/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 05:26:24,897] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step48 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 05:26:24,907 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-44] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.0204, 'grad_norm': 0.6095851633596774, 'learning_rate': 1.8333333333333333e-06, 'epoch': 12.06}
+
+ 83%|██████████████████████████████████████████████████████████████████████████████████████████                  | 50/60 [54:57<11:19, 67.96s/it]
+{'loss': 0.0097, 'grad_norm': 0.47933430607141697, 'learning_rate': 1.6666666666666667e-06, 'epoch': 12.31}
+
+ 85%|███████████████████████████████████████████████████████████████████████████████████████████▊                | 51/60 [55:50<09:33, 63.67s/it]
+
+ 87%|█████████████████████████████████████████████████████████████████████████████████████████████▌              | 52/60 [56:45<08:06, 60.85s/it][INFO|trainer.py:3478] 2024-08-09 05:30:25,149 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52
+[INFO|configuration_utils.py:472] 2024-08-09 05:30:25,153 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:30:25,154 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/generation_config.json
+[2024-08-09 05:30:39,959] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step52 is about to be saved!
+[2024-08-09 05:30:39,987] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/global_step52/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:30:39,988] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/global_step52/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:30:40,001] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/global_step52/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 05:30:40,084] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/global_step52/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|modeling_utils.py:2698] 2024-08-09 05:30:39,361 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:30:39,362 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:30:39,362 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/special_tokens_map.json
+[2024-08-09 05:30:54,066] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/global_step52/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:30:54,067] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52/global_step52/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 05:30:55,640] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step52 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 05:30:55,650 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-48] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.0125, 'grad_norm': 0.9436976929878444, 'learning_rate': 1.1666666666666668e-06, 'epoch': 13.05}
+
+ 90%|█████████████████████████████████████████████████████████████████████████████████████████████████▏          | 54/60 [59:26<06:49, 68.24s/it]
+{'loss': 0.0083, 'grad_norm': 0.4470063169980285, 'learning_rate': 1.0000000000000002e-06, 'epoch': 13.29}
+
+
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████████████▉       | 56/60 [1:01:10<04:00, 60.22s/it]
+ 93%|██████████████████████████████████████████████████████████████████████████████████████████████████▉       | 56/60 [1:01:10<04:00, 60.22s/it][INFO|trainer.py:3478] 2024-08-09 05:34:49,465 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56
+[INFO|configuration_utils.py:472] 2024-08-09 05:34:49,468 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:34:49,469 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 05:35:03,501 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:35:03,502 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:35:03,502 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/special_tokens_map.json
+[2024-08-09 05:35:04,072] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step56 is about to be saved!
+[2024-08-09 05:35:04,095] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:35:04,096] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:35:04,109] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 05:35:04,133] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 05:35:18,790] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:35:18,790] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-09 05:35:19,390 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-52] due to args.save_total_limit
+[2024-08-09 05:35:19,384] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step56 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████████████▋     | 57/60 [1:02:54<03:39, 73.26s/it]
+
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████████▍   | 58/60 [1:03:44<02:12, 66.35s/it]
+{'loss': 0.0103, 'grad_norm': 0.9055528919269208, 'learning_rate': 3.3333333333333335e-07, 'epoch': 14.28}
+
+ 98%|████████████████████████████████████████████████████████████████████████████████████████████████████████▏ | 59/60 [1:04:39<01:03, 63.07s/it]
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 60/60 [1:05:33<00:00, 60.23s/it][INFO|trainer.py:3478] 2024-08-09 05:38:34,201 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60
+[INFO|configuration_utils.py:472] 2024-08-09 05:38:34,204 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:38:34,205 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 05:38:47,874 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:38:47,875 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:38:47,875 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/special_tokens_map.json
+[2024-08-09 05:38:48,472] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step60 is about to be saved!
+[2024-08-09 05:38:48,493] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:38:48,493] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:38:48,506] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 05:38:48,556] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 05:39:02,573] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:39:02,574] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 05:39:04,134] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step60 is ready now!
+[INFO|trainer.py:3570] 2024-08-09 05:39:04,144 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-56] due to args.save_total_limit
+[INFO|trainer.py:3478] 2024-08-09 05:39:25,590 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60
+[INFO|configuration_utils.py:472] 2024-08-09 05:39:25,596 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:39:25,597 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 05:40:01,611 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:40:01,612 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:40:01,613 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/special_tokens_map.json
+[2024-08-09 05:40:02,191] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step60 is about to be saved!
+[2024-08-09 05:40:02,206] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-09 05:40:02,206] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-09 05:40:02,226] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-09 05:40:02,243] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-09 05:41:21,682] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-09 05:41:21,692] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/checkpoint-60/global_step60/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-09 05:41:23,443] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step60 is ready now!
+{'train_runtime': 4120.7953, 'train_samples_per_second': 3.276, 'train_steps_per_second': 0.015, 'train_loss': 0.3188782686367631, 'epoch': 14.77}
+[INFO|trainer.py:2383] 2024-08-09 05:41:23,453 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 60/60 [1:08:32<00:00, 68.54s/it]
+[INFO|trainer.py:3478] 2024-08-09 05:41:33,722 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5
+[INFO|configuration_utils.py:472] 2024-08-09 05:41:33,726 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/config.json
+[INFO|configuration_utils.py:769] 2024-08-09 05:41:33,726 >> Configuration saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-09 05:41:48,206 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-09 05:41:48,207 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-09 05:41:48,207 >> Special tokens file saved in /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/special_tokens_map.json
+***** train metrics *****
+  epoch                    =    14.7692
+  total_flos               =     3172GF
+  train_loss               =     0.3189
+  train_runtime            = 1:08:40.79
+  train_samples_per_second =      3.276
+  train_steps_per_second   =      0.015
+Figure saved at: /model/output/Llama-2-7b-hf-fastchat_alpaca_1k_random-e15lr1e-5/training_loss.png
+08/09/2024 05:41:48 - WARNING - llamafactory.extras.ploting - No metric eval_loss to plot.
+[INFO|trainer.py:3788] 2024-08-09 05:41:48,876 >>
+***** Running Evaluation *****
+[INFO|trainer.py:3790] 2024-08-09 05:41:48,876 >>   Num examples = 100
+[INFO|trainer.py:3793] 2024-08-09 05:41:48,876 >>   Batch size = 1
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [00:05<00:00,  3.00it/s]
+[INFO|modelcard.py:449] 2024-08-09 05:41:54,367 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}
+***** eval metrics *****
+  epoch                   =    14.7692
+  eval_loss               =     2.2058
+  eval_runtime            = 0:00:05.48
+  eval_samples_per_second =     18.215
+  eval_steps_per_second   =      2.732

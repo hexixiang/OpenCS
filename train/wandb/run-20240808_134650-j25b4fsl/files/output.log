@@ -1,0 +1,29 @@
+  0%|                                                                                                                    | 0/105 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  1%|█                                                                                                         | 1/105 [00:36<1:02:48, 36.24s/it]
+{'loss': 1.3193, 'grad_norm': 4.015743268716782, 'learning_rate': 9.090909090909091e-07, 'epoch': 0.14}
+
+  2%|██                                                                                                          | 2/105 [01:05<55:37, 32.40s/it]
+
+  3%|███                                                                                                         | 3/105 [01:35<52:50, 31.08s/it]
+
+  4%|████                                                                                                        | 4/105 [02:05<51:28, 30.58s/it]
+
+
+  6%|██████▏                                                                                                     | 6/105 [03:04<49:43, 30.14s/it]
+
+  7%|███████▏                                                                                                    | 7/105 [03:34<48:59, 29.99s/it]
+  7%|███████▏                                                                                                    | 7/105 [03:34<48:59, 29.99s/it][INFO|trainer.py:3478] 2024-08-08 13:50:41,046 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7
+[INFO|configuration_utils.py:472] 2024-08-08 13:50:41,049 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 13:50:41,050 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 13:50:58,267 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 13:50:58,269 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 13:50:58,270 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/special_tokens_map.json
+[2024-08-08 13:50:58,816] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step7 is about to be saved!
+[2024-08-08 13:50:58,826] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 13:50:58,826] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 13:50:58,839] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 13:50:58,841] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/serialization.py", line 628, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)

@@ -1,0 +1,596 @@
+
+
+
+
+
+
+
+
+
+
+
+  1%|▉                                                                                                           | 10/1092 [00:59<1:38:34,  5.47s/it]
+
+
+
+
+
+
+
+
+
+
+  2%|█▉                                                                                                          | 20/1092 [01:53<1:34:54,  5.31s/it]
+
+
+
+
+
+
+
+
+
+  3%|██▊                                                                                                         | 29/1092 [02:40<1:33:50,  5.30s/it]
+
+
+
+
+
+
+
+
+
+
+
+  4%|███▉                                                                                                        | 40/1092 [03:39<1:33:29,  5.33s/it]
+
+
+
+
+
+
+
+
+
+  4%|████▊                                                                                                       | 49/1092 [04:27<1:31:44,  5.28s/it]
+
+
+
+
+
+
+
+
+
+
+
+  5%|█████▉                                                                                                      | 60/1092 [05:25<1:31:11,  5.30s/it]
+
+
+
+
+
+
+
+
+
+
+  6%|██████▉                                                                                                     | 70/1092 [06:18<1:29:50,  5.27s/it]
+
+
+
+
+
+
+
+
+
+
+  7%|███████▉                                                                                                    | 80/1092 [07:11<1:29:25,  5.30s/it]
+
+
+
+
+
+
+
+
+
+
+  8%|████████▉                                                                                                   | 90/1092 [08:04<1:28:28,  5.30s/it]
+
+
+
+
+
+
+
+
+
+  9%|█████████▊                                                                                                  | 99/1092 [08:51<1:27:22,  5.28s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 10%|██████████▊                                                                                                | 110/1092 [09:49<1:26:13,  5.27s/it]
+
+
+
+
+
+
+
+
+
+ 11%|███████████▋                                                                                               | 119/1092 [10:37<1:25:40,  5.28s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 12%|████████████▋                                                                                              | 130/1092 [11:35<1:24:29,  5.27s/it]
+
+
+
+
+
+
+
+
+
+
+ 13%|█████████████▋                                                                                             | 140/1092 [12:28<1:23:58,  5.29s/it]
+
+
+
+
+
+
+
+
+
+
+ 14%|██████████████▋                                                                                            | 150/1092 [13:21<1:23:21,  5.31s/it]
+
+
+
+
+
+
+
+
+
+
+ 15%|███████████████▋                                                                                           | 160/1092 [14:14<1:22:10,  5.29s/it]
+
+
+
+
+
+
+
+
+
+ 15%|████████████████▌                                                                                          | 169/1092 [15:01<1:21:19,  5.29s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 16%|█████████████████▋                                                                                         | 180/1092 [15:59<1:20:12,  5.28s/it]
+
+
+
+
+
+
+
+
+
+ 17%|██████████████████▌                                                                                        | 189/1092 [16:47<1:20:14,  5.33s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 18%|███████████████████▌                                                                                       | 200/1092 [17:46<1:19:11,  5.33s/it]
+
+
+
+
+
+
+
+
+
+ 19%|████████████████████▍                                                                                      | 209/1092 [18:34<1:18:11,  5.31s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 20%|█████████████████████▌                                                                                     | 220/1092 [19:32<1:16:30,  5.26s/it]
+
+
+
+
+
+
+
+
+
+
+ 21%|██████████████████████▌                                                                                    | 230/1092 [20:25<1:15:49,  5.28s/it]
+
+
+
+
+
+
+
+
+
+ 22%|███████████████████████▍                                                                                   | 239/1092 [21:12<1:14:59,  5.28s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 23%|████████████████████████▍                                                                                  | 250/1092 [22:10<1:14:10,  5.29s/it]
+
+
+
+
+
+
+
+
+
+ 24%|█████████████████████████▍                                                                                 | 259/1092 [22:58<1:13:00,  5.26s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 25%|██████████████████████████▍                                                                                | 270/1092 [23:56<1:12:40,  5.31s/it]
+
+
+
+
+
+
+
+
+
+
+ 26%|███████████████████████████▍                                                                               | 280/1092 [24:49<1:11:11,  5.26s/it]
+
+
+
+
+
+
+
+
+
+ 26%|████████████████████████████▎                                                                              | 289/1092 [25:36<1:10:34,  5.27s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 27%|█████████████████████████████▍                                                                             | 300/1092 [26:34<1:09:31,  5.27s/it]
+
+
+
+
+
+
+
+
+
+
+ 28%|██████████████████████████████▍                                                                            | 310/1092 [27:27<1:08:49,  5.28s/it]
+
+
+
+
+
+
+
+
+
+ 29%|███████████████████████████████▎                                                                           | 319/1092 [28:14<1:07:41,  5.25s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 30%|████████████████████████████████▎                                                                          | 330/1092 [29:13<1:07:22,  5.30s/it]
+
+
+
+
+
+
+
+
+
+ 31%|█████████████████████████████████▏                                                                         | 339/1092 [30:00<1:06:15,  5.28s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 32%|██████████████████████████████████▎                                                                        | 350/1092 [30:58<1:05:45,  5.32s/it]
+
+
+
+
+
+
+
+
+
+
+ 33%|███████████████████████████████████▎                                                                       | 360/1092 [31:51<1:04:23,  5.28s/it]
+
+
+
+
+
+
+
+
+
+ 34%|████████████████████████████████████▏                                                                      | 369/1092 [32:38<1:03:21,  5.26s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 35%|█████████████████████████████████████▏                                                                     | 380/1092 [33:37<1:03:15,  5.33s/it]
+
+
+
+
+
+
+
+
+
+
+ 36%|██████████████████████████████████████▏                                                                    | 390/1092 [34:30<1:01:59,  5.30s/it]
+
+
+
+
+
+
+
+
+
+
+ 37%|███████████████████████████████████████▏                                                                   | 400/1092 [35:23<1:01:14,  5.31s/it]
+
+
+
+
+
+
+
+
+
+
+ 38%|████████████████████████████████████████▉                                                                    | 410/1092 [36:15<59:55,  5.27s/it]
+
+
+
+
+
+
+
+
+
+ 38%|█████████████████████████████████████████▊                                                                   | 419/1092 [37:03<59:37,  5.32s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 39%|██████████████████████████████████████████▉                                                                  | 430/1092 [38:02<58:45,  5.33s/it]
+
+
+
+
+
+
+
+
+
+
+ 40%|███████████████████████████████████████████▉                                                                 | 440/1092 [38:55<57:39,  5.31s/it]
+
+
+
+
+
+
+
+
+
+
+ 41%|████████████████████████████████████████████▉                                                                | 450/1092 [39:48<56:39,  5.30s/it]
+
+
+
+
+
+
+
+
+
+
+ 42%|█████████████████████████████████████████████▉                                                               | 460/1092 [40:41<55:51,  5.30s/it]
+
+
+
+
+
+
+
+
+
+
+ 43%|██████████████████████████████████████████████▉                                                              | 470/1092 [41:34<55:20,  5.34s/it]
+
+
+
+
+
+
+
+
+
+ 44%|███████████████████████████████████████████████▊                                                             | 479/1092 [42:21<54:03,  5.29s/it]
+
+
+
+
+
+
+
+
+
+
+
+ 45%|████████████████████████████████████████████████▉                                                            | 490/1092 [43:20<53:12,  5.30s/it]
+
+
+
+
+
+
+
+
+
+ 46%|█████████████████████████████████████████████████▊                                                           | 499/1092 [44:07<52:16,  5.29s/it]
+ 46%|█████████████████████████████████████████████████▉                                                           | 500/1092 [44:13<52:12,  5.29s/it][INFO|trainer.py:3788] 2024-09-05 02:34:17,997 >>
+***** Running Evaluation *****
+[INFO|trainer.py:3790] 2024-09-05 02:34:17,997 >>   Num examples = 323
+[INFO|trainer.py:3793] 2024-09-05 02:34:17,997 >>   Batch size = 1
+
+
+
+
+
+
+ 85%|███████████████████████████████████████████████████████████████████████████████████████████████▌                | 35/41 [00:10<00:01,  3.17it/s]
+ 46%|█████████████████████████████████████████████████▉                                                           | 500/1092 [44:26<52:12,  5.29s/it][INFO|trainer.py:3478] 2024-09-05 02:34:39,124 >> Saving model checkpoint to /app/qwen2-7b-instruct/checkpoint-500
+[INFO|configuration_utils.py:472] 2024-09-05 02:34:39,127 >> Configuration saved in /app/qwen2-7b-instruct/checkpoint-500/config.json
+[INFO|configuration_utils.py:769] 2024-09-05 02:34:39,128 >> Configuration saved in /app/qwen2-7b-instruct/checkpoint-500/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-09-05 02:35:02,618 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 4 checkpoint shards. You can find where each parameters has been saved in the index located at /app/qwen2-7b-instruct/checkpoint-500/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-09-05 02:35:02,619 >> tokenizer config file saved in /app/qwen2-7b-instruct/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-09-05 02:35:02,619 >> Special tokens file saved in /app/qwen2-7b-instruct/checkpoint-500/special_tokens_map.json
+[2024-09-05 02:35:02,797] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step500 is about to be saved!
+[2024-09-05 02:35:02,806] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /app/qwen2-7b-instruct/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-09-05 02:35:02,806] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /app/qwen2-7b-instruct/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-09-05 02:35:03,329] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /app/qwen2-7b-instruct/checkpoint-500/global_step500/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-09-05 02:35:03,332] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /app/qwen2-7b-instruct/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/torch/serialization.py", line 628, in save
+    _save(obj, opened_zipfile, pickle_module, pickle_protocol, _disable_byteorder_record)
+  File "/usr/local/lib/python3.10/dist-packages/torch/serialization.py", line 862, in _save
+    zip_file.write_record(name, storage, num_bytes)
+RuntimeError: [enforce fail at inline_container.cc:764] . PytorchStreamWriter failed writing file data/4: file write failed
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/app/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/app/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/app/src/llamafactory/train/tuner.py", line 50, in run_exp
+    run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+  File "/app/src/llamafactory/train/sft/workflow.py", line 88, in run_sft
+    train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 1932, in train
+    return inner_training_loop(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2345, in _inner_training_loop
+    self._maybe_log_save_evaluate(tr_loss, grad_norm, model, trial, epoch, ignore_keys_for_eval)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2796, in _maybe_log_save_evaluate
+    self._save_checkpoint(model, trial, metrics=metrics)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2879, in _save_checkpoint
+    self._save_optimizer_and_scheduler(output_dir)

@@ -1,0 +1,477 @@
+  0%|                                                                                                                    | 0/105 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  1%|█                                                                                                         | 1/105 [00:36<1:03:01, 36.36s/it]
+{'loss': 1.3193, 'grad_norm': 4.016076207323181, 'learning_rate': 9.090909090909091e-07, 'epoch': 0.14}
+
+  2%|██                                                                                                          | 2/105 [01:06<56:37, 32.99s/it]
+
+  3%|███                                                                                                         | 3/105 [01:36<53:40, 31.57s/it]
+
+  4%|████                                                                                                        | 4/105 [02:06<51:56, 30.86s/it]
+
+  5%|█████▏                                                                                                      | 5/105 [02:36<50:34, 30.34s/it]
+
+  6%|██████▏                                                                                                     | 6/105 [03:05<49:36, 30.07s/it]
+
+  7%|███████▏                                                                                                    | 7/105 [03:35<48:49, 29.89s/it][INFO|trainer.py:3478] 2024-08-08 14:35:32,802 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7
+[INFO|configuration_utils.py:472] 2024-08-08 14:35:32,805 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 14:35:32,806 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/generation_config.json
+[2024-08-08 14:35:47,591] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step7 is about to be saved!
+[2024-08-08 14:35:47,600] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 14:35:47,601] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 14:35:47,614] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 14:35:47,616] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|modeling_utils.py:2698] 2024-08-08 14:35:47,047 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 14:35:47,048 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 14:35:47,048 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/special_tokens_map.json
+[2024-08-08 14:36:07,683] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 14:36:07,684] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7/global_step7/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 14:36:09,443] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step7 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  8%|████████                                                                                                  | 8/105 [04:49<1:11:01, 43.93s/it]
+
+  9%|█████████                                                                                                 | 9/105 [05:19<1:03:18, 39.57s/it]
+{'loss': 1.1804, 'grad_norm': 1.1536849670431948, 'learning_rate': 8.181818181818183e-06, 'epoch': 1.27}
+
+ 10%|██████████▏                                                                                                | 10/105 [05:48<57:44, 36.47s/it]
+
+ 10%|███████████▏                                                                                               | 11/105 [06:18<53:46, 34.32s/it]
+
+
+ 12%|█████████████▏                                                                                             | 13/105 [07:17<48:54, 31.90s/it]
+
+ 13%|██████████████▎                                                                                            | 14/105 [07:47<47:21, 31.22s/it]
+ 13%|██████████████▎                                                                                            | 14/105 [07:47<47:21, 31.22s/it][INFO|trainer.py:3478] 2024-08-08 14:39:46,125 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14
+[INFO|configuration_utils.py:472] 2024-08-08 14:39:46,129 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 14:39:46,129 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/generation_config.json
+[2024-08-08 14:40:01,373] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step14 is about to be saved!
+[2024-08-08 14:40:01,382] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/global_step14/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 14:40:01,382] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/global_step14/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 14:40:01,396] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/global_step14/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 14:40:01,397] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/global_step14/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|modeling_utils.py:2698] 2024-08-08 14:40:00,827 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 14:40:00,829 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 14:40:00,829 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/special_tokens_map.json
+[2024-08-08 14:40:20,626] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/global_step14/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 14:40:20,627] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14/global_step14/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 14:40:23,664] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step14 is ready now!
+[INFO|trainer.py:3570] 2024-08-08 14:40:23,667 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-7] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 1.0551, 'grad_norm': 0.9382571024332395, 'learning_rate': 9.574468085106385e-06, 'epoch': 2.12}
+ 14%|███████████████                                                                                          | 15/105 [09:12<1:11:16, 47.52s/it]
+
+
+ 16%|█████████████████▎                                                                                         | 17/105 [10:11<56:23, 38.44s/it]
+
+ 17%|██████████████████▎                                                                                        | 18/105 [10:41<51:51, 35.77s/it]
+{'loss': 1.0245, 'grad_norm': 0.8628381135503692, 'learning_rate': 9.255319148936171e-06, 'epoch': 2.55}
+
+ 18%|███████████████████▎                                                                                       | 19/105 [11:11<48:38, 33.93s/it]
+
+ 19%|████████████████████▍                                                                                      | 20/105 [11:40<46:09, 32.58s/it]
+
+ 20%|█████████████████████▍                                                                                     | 21/105 [12:10<44:23, 31.71s/it][INFO|trainer.py:3478] 2024-08-08 14:44:10,545 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21
+[INFO|configuration_utils.py:472] 2024-08-08 14:44:10,548 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 14:44:10,548 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 14:44:24,829 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 14:44:24,830 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 14:44:24,831 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/special_tokens_map.json
+[2024-08-08 14:44:25,375] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step21 is about to be saved!
+[2024-08-08 14:44:25,384] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/global_step21/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 14:44:25,385] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/global_step21/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 14:44:25,397] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/global_step21/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 14:44:25,399] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/global_step21/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 14:44:45,422] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/global_step21/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 14:44:45,423] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21/global_step21/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 14:44:47,595] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step21 is ready now!
+[INFO|trainer.py:3570] 2024-08-08 14:44:47,598 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-14] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.8329, 'grad_norm': 0.9195580542586627, 'learning_rate': 8.829787234042555e-06, 'epoch': 3.12}
+ 21%|██████████████████████                                                                                   | 22/105 [13:34<1:05:42, 47.50s/it]
+
+ 22%|███████████████████████▍                                                                                   | 23/105 [14:04<57:45, 42.27s/it]
+
+ 23%|████████████████████████▍                                                                                  | 24/105 [14:34<52:17, 38.73s/it]
+
+
+ 25%|██████████████████████████▍                                                                                | 26/105 [15:33<44:47, 34.02s/it]
+
+ 26%|███████████████████████████▌                                                                               | 27/105 [16:03<42:31, 32.71s/it]
+{'loss': 0.7633, 'grad_norm': 0.8353431942056587, 'learning_rate': 8.297872340425532e-06, 'epoch': 3.82}
+
+ 27%|████████████████████████████▌                                                                              | 28/105 [16:33<40:44, 31.75s/it][INFO|trainer.py:3478] 2024-08-08 14:48:34,901 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28
+[INFO|configuration_utils.py:472] 2024-08-08 14:48:34,904 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 14:48:34,905 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 14:48:49,290 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 14:48:49,291 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 14:48:49,292 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/special_tokens_map.json
+[2024-08-08 14:48:49,855] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step28 is about to be saved!
+[2024-08-08 14:48:49,864] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 14:48:49,864] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 14:48:49,877] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/global_step28/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 14:48:49,879] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 14:49:09,009] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 14:49:09,009] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28/global_step28/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 14:49:12,169] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step28 is ready now!
+[INFO|trainer.py:3570] 2024-08-08 14:49:12,172 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-21] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 28%|█████████████████████████████                                                                            | 29/105 [17:57<1:00:22, 47.66s/it]
+
+ 29%|██████████████████████████████▌                                                                            | 30/105 [18:27<52:54, 42.33s/it]
+{'loss': 0.6313, 'grad_norm': 0.92132522871089, 'learning_rate': 7.97872340425532e-06, 'epoch': 4.25}
+
+ 30%|███████████████████████████████▌                                                                           | 31/105 [18:57<47:30, 38.52s/it]
+
+
+ 31%|█████████████████████████████████▋                                                                         | 33/105 [19:56<40:40, 33.89s/it]
+
+ 32%|██████████████████████████████████▋                                                                        | 34/105 [20:26<38:36, 32.62s/it]
+{'loss': 0.6469, 'grad_norm': 0.985805320040773, 'learning_rate': 7.553191489361703e-06, 'epoch': 4.81}
+
+ 33%|███████████████████████████████████▋                                                                       | 35/105 [20:55<36:56, 31.67s/it][INFO|trainer.py:3478] 2024-08-08 14:52:58,628 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35
+[INFO|configuration_utils.py:472] 2024-08-08 14:52:58,631 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 14:52:58,632 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 14:53:12,864 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 14:53:12,866 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 14:53:12,866 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/special_tokens_map.json
+[2024-08-08 14:53:13,412] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step35 is about to be saved!
+[2024-08-08 14:53:13,421] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/global_step35/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 14:53:13,421] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/global_step35/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 14:53:13,434] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/global_step35/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 14:53:13,436] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/global_step35/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 14:53:33,619] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/global_step35/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 14:53:33,619] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35/global_step35/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-08 14:53:35,719 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-28] due to args.save_total_limit
+[2024-08-08 14:53:35,715] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step35 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.575, 'grad_norm': 0.9638590247089766, 'learning_rate': 7.340425531914894e-06, 'epoch': 5.1}
+ 34%|████████████████████████████████████▋                                                                      | 36/105 [22:19<54:37, 47.50s/it]
+
+ 35%|█████████████████████████████████████▋                                                                     | 37/105 [22:49<47:51, 42.22s/it]
+
+
+ 37%|███████████████████████████████████████▋                                                                   | 39/105 [23:48<39:18, 35.73s/it]
+
+ 38%|████████████████████████████████████████▊                                                                  | 40/105 [24:18<36:41, 33.87s/it]
+
+ 39%|█████████████████████████████████████████▊                                                                 | 41/105 [24:48<34:48, 32.64s/it]
+{'loss': 0.4679, 'grad_norm': 1.1041407072266562, 'learning_rate': 6.808510638297873e-06, 'epoch': 5.81}
+
+ 40%|██████████████████████████████████████████▊                                                                | 42/105 [25:17<33:19, 31.74s/it][INFO|trainer.py:3478] 2024-08-08 14:57:22,355 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42
+[INFO|configuration_utils.py:472] 2024-08-08 14:57:22,359 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 14:57:22,359 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 14:57:36,914 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 14:57:36,915 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 14:57:36,916 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/special_tokens_map.json
+[2024-08-08 14:57:37,470] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step42 is about to be saved!
+[2024-08-08 14:57:37,479] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/global_step42/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 14:57:37,479] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/global_step42/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 14:57:37,492] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/global_step42/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 14:57:37,495] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/global_step42/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 14:57:58,091] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/global_step42/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 14:57:58,091] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42/global_step42/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-08 14:57:59,952 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-35] due to args.save_total_limit
+[2024-08-08 14:57:59,948] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step42 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+{'loss': 0.39, 'grad_norm': 1.2320368871275653, 'learning_rate': 6.595744680851064e-06, 'epoch': 6.09}
+
+ 42%|█████████████████████████████████████████▉                                                          | 44/105 [27:13<43:10, 42.47s/it]
+{'loss': 0.3504, 'grad_norm': 0.9392266585430052, 'learning_rate': 6.48936170212766e-06, 'epoch': 6.23}
+
+ 43%|██████████████████████████████████████████▊                                                         | 45/105 [27:42<38:33, 38.56s/it]
+
+
+ 45%|████████████████████████████████████████████▊                                                       | 47/105 [28:41<32:45, 33.88s/it]
+
+ 46%|█████████████████████████████████████████████▋                                                      | 48/105 [29:11<30:58, 32.61s/it]
+{'loss': 0.2792, 'grad_norm': 1.270760231833924, 'learning_rate': 6.063829787234044e-06, 'epoch': 6.8}
+
+ 47%|██████████████████████████████████████████████▋                                                     | 49/105 [29:40<29:32, 31.65s/it][INFO|trainer.py:3478] 2024-08-08 15:01:46,272 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49
+[INFO|configuration_utils.py:472] 2024-08-08 15:01:46,276 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 15:01:46,277 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 15:02:00,814 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/model.safetensors.index.json.
+[2024-08-08 15:02:01,385] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step49 is about to be saved!
+[2024-08-08 15:02:01,394] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/global_step49/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:02:01,394] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/global_step49/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:02:01,407] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/global_step49/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 15:02:01,409] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/global_step49/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 15:02:00,815 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:02:00,816 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/special_tokens_map.json
+[2024-08-08 15:02:21,303] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/global_step49/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 15:02:21,304] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49/global_step49/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 15:02:23,720] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step49 is ready now!
+[INFO|trainer.py:3570] 2024-08-08 15:02:23,724 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-42] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 48%|███████████████████████████████████████████████▌                                                    | 50/105 [31:05<43:38, 47.62s/it]
+
+ 49%|████████████████████████████████████████████████▌                                                   | 51/105 [31:35<38:06, 42.34s/it]
+{'loss': 0.2118, 'grad_norm': 0.8633487381597881, 'learning_rate': 5.744680851063831e-06, 'epoch': 7.22}
+
+ 50%|█████████████████████████████████████████████████▌                                                  | 52/105 [32:04<33:58, 38.47s/it]
+
+
+ 51%|███████████████████████████████████████████████████▍                                                | 54/105 [33:03<28:48, 33.89s/it]
+
+ 52%|████████████████████████████████████████████████████▍                                               | 55/105 [33:33<27:11, 32.63s/it]
+{'loss': 0.1927, 'grad_norm': 0.8709387534426459, 'learning_rate': 5.319148936170213e-06, 'epoch': 7.79}
+
+ 53%|█████████████████████████████████████████████████████▎                                              | 56/105 [34:03<25:57, 31.79s/it][INFO|trainer.py:3478] 2024-08-08 15:06:10,390 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56
+[INFO|configuration_utils.py:472] 2024-08-08 15:06:10,394 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 15:06:10,394 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 15:06:24,811 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 15:06:24,812 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:06:24,813 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/special_tokens_map.json
+[2024-08-08 15:06:25,362] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step56 is about to be saved!
+[2024-08-08 15:06:25,371] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:06:25,372] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:06:25,385] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/global_step56/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 15:06:25,386] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 15:06:45,767] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 15:06:45,767] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56/global_step56/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 15:06:47,827] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step56 is ready now!
+[INFO|trainer.py:3570] 2024-08-08 15:06:47,831 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-49] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 54%|██████████████████████████████████████████████████████▎                                             | 57/105 [35:28<38:11, 47.74s/it]
+
+ 55%|███████████████████████████████████████████████████████▏                                            | 58/105 [35:58<33:12, 42.40s/it]
+
+ 56%|████████████████████████████████████████████████████████▏                                           | 59/105 [36:27<29:31, 38.51s/it]
+{'loss': 0.1453, 'grad_norm': 1.111832650006915, 'learning_rate': 4.893617021276596e-06, 'epoch': 8.35}
+
+
+ 58%|██████████████████████████████████████████████████████████                                          | 61/105 [37:26<24:51, 33.89s/it]
+
+ 59%|███████████████████████████████████████████████████████████                                         | 62/105 [37:56<23:23, 32.63s/it]
+
+ 60%|████████████████████████████████████████████████████████████                                        | 63/105 [38:25<22:10, 31.69s/it]
+ 60%|████████████████████████████████████████████████████████████                                        | 63/105 [38:25<22:10, 31.69s/it][INFO|trainer.py:3478] 2024-08-08 15:10:34,335 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63
+[INFO|configuration_utils.py:472] 2024-08-08 15:10:34,339 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 15:10:34,339 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 15:10:48,805 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 15:10:48,807 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:10:48,807 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/special_tokens_map.json
+[2024-08-08 15:10:49,375] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step63 is about to be saved!
+[2024-08-08 15:10:49,384] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/global_step63/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:10:49,384] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/global_step63/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:10:49,397] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/global_step63/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 15:10:49,399] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/global_step63/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 15:11:10,962] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/global_step63/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 15:11:10,962] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63/global_step63/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 15:11:11,758] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step63 is ready now!
+[INFO|trainer.py:3570] 2024-08-08 15:11:11,762 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-56] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 61%|████████████████████████████████████████████████████████████▉                                       | 64/105 [39:50<32:31, 47.60s/it]
+
+ 62%|█████████████████████████████████████████████████████████████▉                                      | 65/105 [40:20<28:10, 42.26s/it]
+
+ 63%|██████████████████████████████████████████████████████████████▊                                     | 66/105 [40:50<25:05, 38.61s/it]
+{'loss': 0.0804, 'grad_norm': 0.765962370675321, 'learning_rate': 4.148936170212766e-06, 'epoch': 9.35}
+
+ 64%|███████████████████████████████████████████████████████████████▊                                    | 67/105 [41:19<22:40, 35.80s/it]
+
+
+ 66%|█████████████████████████████████████████████████████████████████▋                                  | 69/105 [42:18<19:34, 32.62s/it]
+
+ 67%|██████████████████████████████████████████████████████████████████▋                                 | 70/105 [42:48<18:28, 31.67s/it]
+ 67%|██████████████████████████████████████████████████████████████████▋                                 | 70/105 [42:48<18:28, 31.67s/it][INFO|trainer.py:3478] 2024-08-08 15:14:58,205 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70
+[INFO|configuration_utils.py:472] 2024-08-08 15:14:58,209 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 15:14:58,209 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 15:15:12,597 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 15:15:12,600 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:15:12,600 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/special_tokens_map.json
+[2024-08-08 15:15:13,154] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step70 is about to be saved!
+[2024-08-08 15:15:13,163] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/global_step70/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:15:13,163] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/global_step70/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:15:13,176] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/global_step70/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 15:15:13,178] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/global_step70/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 15:15:34,130] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/global_step70/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 15:15:34,131] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70/global_step70/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-08 15:15:35,621 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-63] due to args.save_total_limit
+[2024-08-08 15:15:35,617] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step70 is ready now!
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 68%|███████████████████████████████████████████████████████████████████▌                                | 71/105 [44:13<26:59, 47.62s/it]
+
+ 69%|████████████████████████████████████████████████████████████████████▌                               | 72/105 [44:42<23:15, 42.29s/it]
+
+ 70%|█████████████████████████████████████████████████████████████████████▌                              | 73/105 [45:12<20:30, 38.44s/it]
+{'loss': 0.0447, 'grad_norm': 0.5802462812532174, 'learning_rate': 3.4042553191489363e-06, 'epoch': 10.34}
+
+ 70%|██████████████████████████████████████████████████████████████████████▍                             | 74/105 [45:41<18:28, 35.75s/it]
+
+
+ 72%|████████████████████████████████████████████████████████████████████████▍                           | 76/105 [46:41<15:46, 32.64s/it]
+{'loss': 0.0387, 'grad_norm': 0.621800362598403, 'learning_rate': 3.0851063829787237e-06, 'epoch': 10.76}
+
+ 73%|█████████████████████████████████████████████████████████████████████████▎                          | 77/105 [47:10<14:44, 31.59s/it][INFO|trainer.py:3478] 2024-08-08 15:19:21,559 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77
+[INFO|configuration_utils.py:472] 2024-08-08 15:19:21,563 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/config.json
+[INFO|configuration_utils.py:769] 2024-08-08 15:19:21,563 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 15:19:35,973 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 15:19:35,974 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:19:35,975 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/special_tokens_map.json
+[2024-08-08 15:19:36,526] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step77 is about to be saved!
+[2024-08-08 15:19:36,535] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/global_step77/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:19:36,535] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/global_step77/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:19:36,548] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/global_step77/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 15:19:36,550] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/global_step77/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 15:19:57,277] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/global_step77/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 15:19:57,278] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77/global_step77/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 15:19:58,859] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step77 is ready now!
+[INFO|trainer.py:3570] 2024-08-08 15:19:58,864 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-70] due to args.save_total_limit
+/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+ 74%|██████████████████████████████████████████████████████████████████████████▎                         | 78/105 [48:34<21:20, 47.43s/it]
+ 75%|███████████████████████████████████████████████████████████████████████████▏                        | 79/105 [49:04<18:16, 42.16s/it]
+ 75%|███████████████████████████████████████████████████████████████████████████▏                        | 79/105 [49:04<18:16, 42.16s/it]
+{'loss': 0.0277, 'grad_norm': 0.6405824786705263, 'learning_rate': 2.765957446808511e-06, 'epoch': 11.19}
+ 76%|████████████████████████████████████████████████████████████████████████████▏                       | 80/105 [49:34<16:01, 38.44s/it]
+ 76%|████████████████████████████████████████████████████████████████████████████▏                       | 80/105 [49:34<16:01, 38.44s/it]
+ 77%|█████████████████████████████████████████████████████████████████████████████▏                      | 81/105 [50:03<14:18, 35.76s/it]
+ 78%|██████████████████████████████████████████████████████████████████████████████                      | 82/105 [50:33<12:59, 33.88s/it]
+ 78%|██████████████████████████████████████████████████████████████████████████████                      | 82/105 [50:33<12:59, 33.88s/it]
+ 79%|███████████████████████████████████████████████████████████████████████████████                     | 83/105 [51:02<11:56, 32.59s/it]
+ 79%|███████████████████████████████████████████████████████████████████████████████                     | 83/105 [51:02<11:56, 32.59s/it]
+{'loss': 0.0227, 'grad_norm': 0.758822525052451, 'learning_rate': 2.340425531914894e-06, 'epoch': 11.75}
+ 80%|████████████████████████████████████████████████████████████████████████████████                    | 84/105 [51:32<11:03, 31.62s/it]
+[INFO|configuration_utils.py:769] 2024-08-08 15:23:44,827 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/generation_config.json08-08 15:23:44,823 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:23:59,576 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/special_tokens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:23:59,576 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/special_tokens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/model.safetensors.index.json.
+[2024-08-08 15:24:00,148] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step84 is about to be saved!
+[2024-08-08 15:24:00,157] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/global_step84/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:24:00,157] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/global_step84/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:24:00,170] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/global_step84/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 15:24:00,172] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/global_step84/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[INFO|trainer.py:3570] 2024-08-08 15:24:22,527 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77] due to args.save_total_limitens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/model.safetensors.index.json.
+[INFO|trainer.py:3570] 2024-08-08 15:24:22,527 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-77] due to args.save_total_limitens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/model.safetensors.index.json.
+[2024-08-08 15:24:21,789] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84/global_step84/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+  warnings.warn(ython3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 81%|████████████████████████████████████████████████████████████████████████████████▉                   | 85/105 [52:57<15:53, 47.66s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 81%|████████████████████████████████████████████████████████████████████████████████▉                   | 85/105 [52:57<15:53, 47.66s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 82%|█████████████████████████████████████████████████████████████████████████████████▉                  | 86/105 [53:26<13:23, 42.28s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 82%|█████████████████████████████████████████████████████████████████████████████████▉                  | 86/105 [53:26<13:23, 42.28s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+{'loss': 0.0229, 'grad_norm': 0.3884458028162232, 'learning_rate': 2.021276595744681e-06, 'epoch': 12.18}
+ 83%|██████████████████████████████████████████████████████████████████████████████████▊                 | 87/105 [53:56<11:33, 38.54s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 83%|██████████████████████████████████████████████████████████████████████████████████▊                 | 87/105 [53:56<11:33, 38.54s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 84%|███████████████████████████████████████████████████████████████████████████████████▊                | 88/105 [54:26<10:10, 35.93s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 85%|████████████████████████████████████████████████████████████████████████████████████▊               | 89/105 [54:56<09:03, 33.98s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 85%|████████████████████████████████████████████████████████████████████████████████████▊               | 89/105 [54:56<09:03, 33.98s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 86%|█████████████████████████████████████████████████████████████████████████████████████▋              | 90/105 [55:25<08:09, 32.65s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 86%|█████████████████████████████████████████████████████████████████████████████████████▋              | 90/105 [55:25<08:09, 32.65s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+{'loss': 0.0117, 'grad_norm': 0.3279585188914127, 'learning_rate': 1.595744680851064e-06, 'epoch': 12.74}
+ 87%|██████████████████████████████████████████████████████████████████████████████████████▋             | 91/105 [55:54<07:23, 31.67s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|configuration_utils.py:769] 2024-08-08 15:28:08,992 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/generation_config.json08-08 15:28:08,987 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91 but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:28:23,205 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/special_tokens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/model.safetensors.index.json. you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:28:23,205 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/special_tokens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/model.safetensors.index.json. you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[2024-08-08 15:28:23,759] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step91 is about to be saved!
+[2024-08-08 15:28:23,768] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/global_step91/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:28:23,768] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/global_step91/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:28:23,781] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/global_step91/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 15:28:23,783] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/global_step91/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-08-08 15:28:45,267] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/global_step91/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 15:28:45,267] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/global_step91/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|trainer.py:3570] 2024-08-08 15:28:46,039 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-84] due to args.save_total_limitens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91/model.safetensors.index.json. you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(ython3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(ython3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 88%|███████████████████████████████████████████████████████████████████████████████████████▌            | 92/105 [57:18<10:15, 47.37s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 89%|████████████████████████████████████████████████████████████████████████████████████████▌           | 93/105 [57:48<08:23, 42.00s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 89%|████████████████████████████████████████████████████████████████████████████████████████▌           | 93/105 [57:48<08:23, 42.00s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 90%|█████████████████████████████████████████████████████████████████████████████████████████▌          | 94/105 [58:18<07:02, 38.38s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 90%|█████████████████████████████████████████████████████████████████████████████████████████▌          | 94/105 [58:18<07:02, 38.38s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████▍         | 95/105 [58:48<05:57, 35.80s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 90%|██████████████████████████████████████████████████████████████████████████████████████████▍         | 95/105 [58:48<05:57, 35.80s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+{'loss': 0.0107, 'grad_norm': 0.2670931214405187, 'learning_rate': 1.0638297872340427e-06, 'epoch': 13.45}
+ 91%|███████████████████████████████████████████████████████████████████████████████████████████▍        | 96/105 [59:17<05:04, 33.81s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 92%|████████████████████████████████████████████████████████████████████████████████████████████▍       | 97/105 [59:46<04:19, 32.39s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 92%|████████████████████████████████████████████████████████████████████████████████████████████▍       | 97/105 [59:46<04:19, 32.39s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████▍      | 98/105 [1:00:16<03:41, 31.63s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 93%|███████████████████████████████████████████████████████████████████████████████████████████▍      | 98/105 [1:00:16<03:41, 31.63s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|configuration_utils.py:769] 2024-08-08 15:32:31,665 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/generation_config.json08-08 15:32:31,662 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98 but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|configuration_utils.py:769] 2024-08-08 15:32:31,665 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/generation_config.json08-08 15:32:31,662 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98 but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[2024-08-08 15:32:46,643] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step98 is about to be saved!
+[2024-08-08 15:32:46,652] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/global_step98/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:32:46,652] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/global_step98/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:32:46,665] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/global_step98/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:32:46,081 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/special_tokens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/model.safetensors.index.json. you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|trainer.py:3570] 2024-08-08 15:33:09,280 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91] due to args.save_total_limitens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/model.safetensors.index.json. you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|trainer.py:3570] 2024-08-08 15:33:09,280 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-91] due to args.save_total_limitens_map.jsonind where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/model.safetensors.index.json. you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[2024-08-08 15:33:09,269] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/global_step98/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 15:33:09,269] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98/global_step98/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+  warnings.warn(ython3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████▍     | 99/105 [1:01:41<04:45, 47.59s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████▍     | 99/105 [1:01:41<04:45, 47.59s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+{'loss': 0.0093, 'grad_norm': 0.26729401590133056, 'learning_rate': 6.382978723404255e-07, 'epoch': 14.02}
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████▍    | 100/105 [1:02:10<03:30, 42.20s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 95%|████████████████████████████████████████████████████████████████████████████████████████████▍    | 100/105 [1:02:10<03:30, 42.20s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 96%|█████████████████████████████████████████████████████████████████████████████████████████████▎   | 101/105 [1:02:40<02:33, 38.40s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 96%|█████████████████████████████████████████████████████████████████████████████████████████████▎   | 101/105 [1:02:40<02:33, 38.40s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████▏  | 102/105 [1:03:09<01:47, 35.69s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████▏  | 102/105 [1:03:09<01:47, 35.69s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 98%|███████████████████████████████████████████████████████████████████████████████████████████████▏ | 103/105 [1:03:39<01:07, 33.89s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 98%|███████████████████████████████████████████████████████████████████████████████████████████████▏ | 103/105 [1:03:39<01:07, 33.89s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████ | 104/105 [1:04:08<00:32, 32.59s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+ 99%|████████████████████████████████████████████████████████████████████████████████████████████████ | 104/105 [1:04:08<00:32, 32.59s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 105/105 [1:04:38<00:00, 31.63s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 105/105 [1:04:38<00:00, 31.63s/it]ould be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|configuration_utils.py:769] 2024-08-08 15:36:34,484 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/generation_config.json8-08 15:36:34,480 >> Saving model checkpoint to /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:36:48,257 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/special_tokens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:36:48,257 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/special_tokens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[2024-08-08 15:36:48,822] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step105 is about to be saved!
+[2024-08-08 15:36:48,831] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:36:48,831] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:36:48,844] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[INFO|trainer.py:3570] 2024-08-08 15:37:10,915 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98] due to args.save_total_limitkens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|trainer.py:3570] 2024-08-08 15:37:10,915 >> Deleting older checkpoint [/model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-98] due to args.save_total_limitkens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[2024-08-08 15:37:09,660] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-08-08 15:37:09,661] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[INFO|configuration_utils.py:769] 2024-08-08 15:37:28,445 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/generation_config.jsonens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:38:04,234 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/special_tokens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:38:04,234 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/special_tokens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[2024-08-08 15:38:04,824] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step105 is about to be saved!
+[2024-08-08 15:38:04,833] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/zero_pp_rank_0_mp_rank_00_model_states.pt
+[2024-08-08 15:38:04,834] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/zero_pp_rank_0_mp_rank_00_model_states.pt...
+[2024-08-08 15:38:04,847] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/zero_pp_rank_0_mp_rank_00_model_states.pt.
+[2024-08-08 15:38:04,848] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 105/105 [1:07:41<00:00, 38.68s/it]1k/checkpoint-105/special_tokens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████| 105/105 [1:07:41<00:00, 38.68s/it]1k/checkpoint-105/special_tokens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[2024-08-08 15:39:29,638] [INFO] [engine.py:3478:_save_zero_checkpoint] zero checkpoint saved /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/global_step105/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-08-08 15:39:30,359] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step105 is ready now!
+[INFO|configuration_utils.py:472] 2024-08-08 15:39:37,573 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/config.jsoncheckpoint-105/special_tokens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|configuration_utils.py:472] 2024-08-08 15:39:37,573 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/config.jsoncheckpoint-105/special_tokens_map.jsonnd where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/checkpoint-105/model.safetensors.index.json.you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+[INFO|configuration_utils.py:769] 2024-08-08 15:39:37,573 >> Configuration saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/generation_config.json
+[INFO|modeling_utils.py:2698] 2024-08-08 15:39:51,152 >> The model is bigger than the maximum size per checkpoint (5GB) and is going to be split in 3 checkpoint shards. You can find where each parameters has been saved in the index located at /model/output/Llama-2-7b-hf-alpaca-longest-1k/model.safetensors.index.json.
+[INFO|tokenization_utils_base.py:2574] 2024-08-08 15:39:51,153 >> tokenizer config file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2583] 2024-08-08 15:39:51,153 >> Special tokens file saved in /model/output/Llama-2-7b-hf-alpaca-longest-1k/special_tokens_map.json
+***** train metrics *****
+[INFO|trainer.py:3788] 2024-08-08 15:39:51,827 >>
+***** Running Evaluation *****
+[INFO|trainer.py:3790] 2024-08-08 15:39:51,827 >>   Num examples = 100
+[INFO|trainer.py:3793] 2024-08-08 15:39:51,827 >>   Batch size = 1
+  8%|████████▏                                                                                             | 2/25 [00:00<00:08,  2.84it/s]
+  epoch                    =    14.8673
+  total_flos               =     8572GF
+  train_loss               =     0.4145
+  train_runtime            = 1:09:44.35
+  train_samples_per_second =      3.226
+  train_steps_per_second   =      0.025
+Figure saved at: /model/output/Llama-2-7b-hf-alpaca-longest-1k/training_loss.png
+ 28%|████████████████████████████▌                                                                         | 7/25 [00:02<00:07,  2.47it/s]
+ 48%|████████████████████████████████████████████████▍                                                    | 12/25 [00:04<00:05,  2.51it/s]
+ 68%|████████████████████████████████████████████████████████████████████▋                                | 17/25 [00:06<00:03,  2.48it/s]
+ 88%|████████████████████████████████████████████████████████████████████████████████████████▉            | 22/25 [00:08<00:01,  2.46it/s]
+ 88%|████████████████████████████████████████████████████████████████████████████████████████▉            | 22/25 [00:08<00:01,  2.46it/s]
+***** eval metrics *****
+  epoch                   =    14.8673
+  eval_loss               =     2.6536
+  eval_runtime            = 0:00:10.54
+  eval_samples_per_second =      9.479
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:10<00:00,  2.49it/s]
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:10<00:00,  2.49it/s]

@@ -1,0 +1,32 @@
+  0%|                                                                             | 0/135 [00:00<?, ?it/s]/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+  1%|▍                                                                  | 1/135 [00:30<1:07:57, 30.43s/it]
+{'loss': 1.3489, 'grad_norm': 43.85282559311315, 'learning_rate': 4.878048780487805e-07, 'epoch': 0.02}
+
+  1%|█                                                                    | 2/135 [00:54<59:44, 26.95s/it]
+
+  2%|█▌                                                                   | 3/135 [01:17<55:02, 25.02s/it]
+
+
+  4%|██▌                                                                  | 5/135 [02:07<53:32, 24.71s/it]
+  4%|██▌                                                                  | 5/135 [02:07<53:32, 24.71s/it]Traceback (most recent call last):
+  File "/app/src/llamafactory/launcher.py", line 23, in <module>
+    launch()
+  File "/app/src/llamafactory/launcher.py", line 19, in launch
+    run_exp()
+  File "/app/src/llamafactory/train/tuner.py", line 50, in run_exp
+    run_sft(model_args, data_args, training_args, finetuning_args, generating_args, callbacks)
+  File "/app/src/llamafactory/train/sft/workflow.py", line 88, in run_sft
+    train_result = trainer.train(resume_from_checkpoint=training_args.resume_from_checkpoint)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 1932, in train
+    return inner_training_loop(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 2268, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/trainer.py", line 3324, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/accelerator.py", line 2126, in backward
+    self.deepspeed_engine_wrapped.backward(loss, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/utils/deepspeed.py", line 166, in backward
+    self.engine.backward(loss, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/deepspeed/utils/nvtx.py", line 15, in wrapped_fn
+    ret_val = func(*args, **kwargs)
