@@ -6,7 +6,7 @@
 
 This project introduces OpenCS, a novel method for Instruction Fine-Tuning (IFT) of large language models (LLMs). OpenCS enhances data selection through Open-tag clustering and Contrastive Scoring, improving data diversity and stability. Our experiments demonstrate that OpenCS significantly outperforms existing methods, achieving superior instruction-following performance on MT-Bench.
 
-<a href="https://github.com/hexixiang">Xixiang He</a>, <a href="https://github.com/hexixiang">Hao Yu</a>, <a href="https://github.com/hexixiang">Qiyao Sun</a>
+<a href="https://github.com/hexixiang">Xixiang He</a>, <a href="https://github.com/Antiman-cmyk">Qiyao Sun</a>, <a href="https://github.com/JohnTeller722">Tailai Zhang</a>, <a href="https://github.com/liangren-danggui">Cong Liu</a>
 
 This repository contains:
 
@@ -84,7 +84,6 @@ After generating and clustering tags, we apply a normalization process to denois
 For detailed instructions on how to run the Open-tag Clustering scripts, please refer to the [Contrastive Scoring README](src/contrastive_score/readme.md).
 
 
-
 ## Model Fine-Tuning
 
 The scripts for fine-tuning the models are provided in the `train/bash/sft_full.sh` file. This script allows you to fine-tune different open-sourced models like Llama2-7b, Llama2-13b, and Mistral-7b-v0.1 used in the experiments.
@@ -109,29 +108,73 @@ If you want to fine-tune all models in one go, we provide a Python script locate
 python train/train.py
 ```
 
-## Model Infer
+## Generate Model Answer
+
+After fine-tuning the models, you can generate answers using the inference scripts. The script for model inference is located in the `infer/fastchat/llm_judge/gen_answer.sh` file. This script allows you to generate answers from the trained models.
+
+To run the inference and generate answers, navigate to the `infer/fastchat/llm_judge` directory and execute the following command:
+
+```bash
+cd infer/fastchat/llm_judge
+sh gen_answer.sh
+```
 
 ## Evaluation
 
-We conducted a preference evaluation to compare the performance of OpenCS against several baseline methods. The evaluation was carried out on two datasets: Alpaca52k and Evol-Instruct-70k, using the LLaMA2-7B model. 
+We conducted a preference evaluation to compare the performance of OpenCS against several baseline methods. The evaluation was carried out on two datasets: Alpaca52k and Evol-Instruct-70k, using the LLaMA2-7B model.
 
-The preference evaluation results, shown below, demonstrate the win, tie, and lose rates of OpenCS compared to the baseline methods. The rows represent the five test sets used in the evaluation, while the columns correspond to the four baseline methods. 
+The preference evaluation results, shown below, demonstrate the win, tie, and lose rates of OpenCS compared to the baseline methods. The rows represent the five test sets used in the evaluation, while the columns correspond to the four baseline methods.
 
-### Preference evaluation Results (in %)
+### Preference Evaluation Results (in %)
 
 The results clearly show that OpenCS consistently achieves higher preference scores compared to the existing methods across both datasets.
 
 <div align="center">
-    <img src="figures/main_results.png" alt="Preference Evaluation Results" width="800"/>
+    <img src="figures/main_results.png" alt="Preference Evaluation Results" width="600"/>
 </div>
 
 *Figure: Preference evaluation results on Alpaca52k and Evol-Instruct-70k datasets with LLaMA2-7B.*
 
+### Model Evaluation Script
+
+To perform a detailed evaluation using GPT-4 for pairwise comparison of model answers, we provide a script located at `evaluate/evaluation_gpt4.py`. This script allows you to compare the responses of two models, assessing their quality based on various criteria.
+
+### Usage
+
+1. **Prepare Your Input**: Ensure your input JSON files contain prompts and the answers from both models you wish to compare.
+
+2. **Run the Evaluation Script**: Execute the script with the following command:
+
+    ```bash
+    python evaluate/evaluation_gpt4.py --input_dir /path/to/input --output_dir /path/to/output --key_1 model_name1 --key_2 model_name2
+    ```
+
+   Make sure to replace `/path/to/input` with the directory of your JSON files, `/path/to/output` with where you want to save results, and `model_name1` and `model_name2` with the respective model names.
+
+3. **Results**: The results will be saved in the specified output directory, including scores and reviews for each answer pair evaluated by GPT-4.
+
+This evaluation process provides valuable insights into the relative performance of different models, helping to highlight strengths and areas for improvement.
+
+<!-- 
 ### Cross-LLM performance (in %)
 
 <div align="center">
-    <img src="figures/average.png" alt="Cross-LLM Evaluation Results" width="800"/>
+    <img src="figures/average.png" alt="Cross-LLM Evaluation Results" width="600"/>
+</div> -->
+
+### MT-Bench
+
+We conducted a single-score evaluation on MT-Bench across different base LLMs and IFT datasets. Scores were generated by GPT-4 on a scale ranging from [1, 10]. The results highlight the effectiveness of our approach, with the best performing methods bolded and the second best methods underlined.
+
+The following table summarizes the scores obtained by OpenCS compared to other baseline methods on various datasets. These results demonstrate that OpenCS consistently achieves high scores, affirming its superiority in instruction-following tasks.
+
+<div align="center">
+    <img src="figures/mt-bench.png" alt="MT-Bench Results" style="width:60%;"/>
 </div>
+
+*Figure: Single-score evaluation results on MT-Bench for various LLMs.*
+
+
 
 ## References
 - [Koala](https://github.com/young-geng/EasyLM/tree/main)
@@ -139,4 +182,5 @@ The results clearly show that OpenCS consistently achieves higher preference sco
 - [Lima](https://arxiv.org/abs/2305.11206)
 - [Alpaca](https://github.com/tatsu-lab/stanford_alpaca)
 - [Evol-Instruct](https://github.com/nlpxucan/WizardLM)
+- [long](https://github.com/tml-epfl/long-is-more-for-alignment)
 - [GPT-4-Report](https://arxiv.org/pdf/2303.08774.pdf)
