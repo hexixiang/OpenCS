@@ -10,7 +10,6 @@ This project introduces OpenCS, a novel method for Instruction Fine-Tuning (IFT)
 
 
 
-
 This repository contains:
 
 - The code for selecting and filtering the data.
