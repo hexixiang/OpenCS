@@ -57,9 +57,9 @@ def merge_json_files(folder1, folder2, output_folder, test_data):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Merge JSON files from two folders into one.")
-    parser.add_argument("--folder1", default="/home/hxx/long-is-more-for-alignment/output/model_answer/llama2-7b/llama2-7b-alpaca_tips_WHAT_1k_sharegpt-e15lr1e-05", help="Path to the first folder containing JSON files.")
-    parser.add_argument("--folder2", default="/home/hxx/long-is-more-for-alignment/output/model_answer/wo_pair/llama2-7b-alpaca_tips_wo_pair_score_1k_sharegpt-e15lr1e-05", help="Path to the second folder containing JSON files.")
-    parser.add_argument("--output_folder", default="/home/hxx/long-is-more-for-alignment/output/model_judgement/wo_pair/llama2-7b-alpaca_tips_wo_pair_score_1k_sharegpt-e15lr1e-05", help="Path to the output folder to save merged JSON files.")
+    parser.add_argument("--folder1", default="path/to/folder1", help="Path to the first folder containing JSON files.")
+    parser.add_argument("--folder2", default="path/to/folder2", help="Path to the second folder containing JSON files.")
+    parser.add_argument("--output_folder", default="path/to/output_folder", help="Path to the output folder to save merged JSON files.")
     
     args = parser.parse_args()
 
