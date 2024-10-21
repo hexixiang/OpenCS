@@ -6,7 +6,7 @@
 
 This project introduces OpenCS, a novel method for Instruction Fine-Tuning (IFT) of large language models (LLMs). OpenCS enhances data selection through Open-tag clustering and Contrastive Scoring, improving data diversity and stability. Our experiments demonstrate that OpenCS significantly outperforms existing methods, achieving superior instruction-following performance on MT-Bench.
 
-<a href="https://github.com/hexixiang">Xixiang He</a>, <a href="https://github.com/haoyu94">Hao Yu</a>, <a href="https://github.com/Antiman-cmyk">Qiyao Sun</a>, <a href="https://github.com/JohnTeller722">Tailai Zhang</a>, <a href="https://github.com/liangren-danggui">Cong Liu</a>, <a href="https://github.com/GUOShuxuan">Shuxuan Guo</a>
+<a href="https://github.com/hexixiang">Xixiang He</a>, <a href="https://github.com/haoyu94">Hao Yu</a>, <a href="https://github.com/chengao18">Ao Cheng</a>, <a href="https://github.com/Antiman-cmyk">Qiyao Sun</a>, <a href="https://github.com/JohnTeller722">Tailai Zhang</a>, <a href="https://github.com/liangren-danggui">Cong Liu</a>, <a href="https://github.com/GUOShuxuan">Shuxuan Guo</a>
 
 
 
